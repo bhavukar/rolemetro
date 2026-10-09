@@ -4,6 +4,7 @@ import React, { useState, useRef } from 'react';
 import { UploadCloud, ArrowRight, X } from 'lucide-react';
 import { CandidateProfile } from '../lib/types';
 import { DEMO_PROFILE, parseResumeContent } from '../lib/resumeParser';
+import { extractTextFromPdf } from '../lib/pdfExtractor';
 
 interface ResumeUploaderProps {
   profile: CandidateProfile | null;
@@ -36,13 +37,22 @@ export function ResumeUploader({ profile, setProfile, onContinue }: ResumeUpload
   const processFile = async (file: File) => {
     setIsAnalyzing(true);
     try {
-      const text = await file.text();
-      setTimeout(() => {
-        const parsed = parseResumeContent(text);
-        setProfile(parsed);
-        setIsAnalyzing(false);
-      }, 500);
-    } catch {
+      let text = '';
+      if (file.type === 'application/pdf' || file.name.toLowerCase().endsWith('.pdf')) {
+        text = await extractTextFromPdf(file);
+      } else {
+        text = await file.text();
+      }
+
+      if (!text || text.trim().length === 0) {
+        text = await file.text();
+      }
+
+      const parsed = parseResumeContent(text);
+      setProfile(parsed);
+      setIsAnalyzing(false);
+    } catch (err) {
+      console.error('Resume parse error', err);
       setIsAnalyzing(false);
     }
   };

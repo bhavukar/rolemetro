@@ -80,10 +80,29 @@ export function parseResumeContent(rawText: string): CandidateProfile {
     ? portfolioMatch[0]
     : '';
 
-  // Extract Name (First non-empty line that doesn't look like an email or url)
-  let name = lines[0] || 'Applicant';
-  if (name.includes('@') || name.startsWith('http') || name.length > 35) {
-    name = lines.find(l => !l.includes('@') && !l.startsWith('http') && l.length < 35) || 'Applicant';
+  // Extract Name: Find first line with 2-4 words made of letters only
+  let name = '';
+  for (const line of lines.slice(0, 10)) {
+    const cleanLine = line.trim();
+    if (
+      cleanLine.startsWith('%') ||
+      cleanLine.includes('@') ||
+      cleanLine.startsWith('http') ||
+      /^(resume|curriculum|vitae|cv|page\s*\d|profile|experience|education|contact)/i.test(cleanLine) ||
+      cleanLine.length < 3 ||
+      cleanLine.length > 40
+    ) {
+      continue;
+    }
+    const words = cleanLine.split(/\s+/);
+    if (words.length >= 1 && words.length <= 4 && /^[A-Za-z\s.'-]+$/.test(cleanLine)) {
+      name = cleanLine;
+      break;
+    }
+  }
+
+  if (!name) {
+    name = lines.find(l => !l.startsWith('%') && !l.includes('@') && !l.startsWith('http') && l.length > 2 && l.length < 35) || 'Applicant';
   }
 
   // Detect Skills
