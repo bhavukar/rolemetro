@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { X, Plus, Building } from 'lucide-react';
+import { X, Building } from 'lucide-react';
 import { StartupRole, RoleCategory } from '../lib/types';
 
 interface AddStartupModalProps {
@@ -56,18 +56,18 @@ export function AddStartupModal({ isOpen, onClose, onAddRole }: AddStartupModalP
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
-      <div className="w-full max-w-lg rounded-lg border border-zinc-800 bg-zinc-950 p-6 space-y-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4 backdrop-blur-xs">
+      <div className="w-full max-w-lg rounded-lg border border-zinc-200 bg-white p-6 space-y-4 shadow-lg">
         
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-zinc-800 pb-3">
+        <div className="flex items-center justify-between border-b border-zinc-200 pb-3">
           <div className="flex items-center gap-2">
-            <Building className="h-4 w-4 text-zinc-300" />
-            <h3 className="text-sm font-semibold text-zinc-100">Add Custom Startup Lead</h3>
+            <Building className="h-4 w-4 text-zinc-700" />
+            <h3 className="text-sm font-semibold text-zinc-950">Add Custom Startup Lead</h3>
           </div>
           <button
             onClick={onClose}
-            className="rounded p-1 text-zinc-400 hover:bg-zinc-900 hover:text-zinc-200"
+            className="rounded p-1 text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700"
           >
             <X className="h-4 w-4" />
           </button>
@@ -78,69 +78,69 @@ export function AddStartupModal({ isOpen, onClose, onAddRole }: AddStartupModalP
           
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-zinc-400 mb-1 font-medium">Company Name *</label>
+              <label className="block text-zinc-600 mb-1 font-medium">Company Name *</label>
               <input
                 type="text"
                 required
                 placeholder="e.g. Acme Labs"
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
-                className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
+                className="w-full rounded border border-zinc-200 bg-white px-3 py-1.5 text-zinc-900 focus:border-zinc-400 focus:outline-none"
               />
             </div>
             <div>
-              <label className="block text-zinc-400 mb-1 font-medium">Website</label>
+              <label className="block text-zinc-600 mb-1 font-medium">Website</label>
               <input
                 type="text"
                 placeholder="https://acme.com"
                 value={website}
                 onChange={(e) => setWebsite(e.target.value)}
-                className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
+                className="w-full rounded border border-zinc-200 bg-white px-3 py-1.5 text-zinc-900 focus:border-zinc-400 focus:outline-none"
               />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-zinc-400 mb-1 font-medium">Founder / Recipient Name</label>
+              <label className="block text-zinc-600 mb-1 font-medium">Founder / Recipient Name</label>
               <input
                 type="text"
                 placeholder="Alex Rivera"
                 value={founderName}
                 onChange={(e) => setFounderName(e.target.value)}
-                className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
+                className="w-full rounded border border-zinc-200 bg-white px-3 py-1.5 text-zinc-900 focus:border-zinc-400 focus:outline-none"
               />
             </div>
             <div>
-              <label className="block text-zinc-400 mb-1 font-medium">Recipient Email *</label>
+              <label className="block text-zinc-600 mb-1 font-medium">Recipient Email *</label>
               <input
                 type="email"
                 required
                 placeholder="alex@acme.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none font-mono"
+                className="w-full rounded border border-zinc-200 bg-white px-3 py-1.5 text-zinc-900 focus:border-zinc-400 focus:outline-none font-mono"
               />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-zinc-400 mb-1 font-medium">Role Title</label>
+              <label className="block text-zinc-600 mb-1 font-medium">Role Title</label>
               <input
                 type="text"
                 placeholder="Founding Engineer"
                 value={roleTitle}
                 onChange={(e) => setRoleTitle(e.target.value)}
-                className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
+                className="w-full rounded border border-zinc-200 bg-white px-3 py-1.5 text-zinc-900 focus:border-zinc-400 focus:outline-none"
               />
             </div>
             <div>
-              <label className="block text-zinc-400 mb-1 font-medium">Category</label>
+              <label className="block text-zinc-600 mb-1 font-medium">Category</label>
               <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value as RoleCategory)}
-                className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
+                className="w-full rounded border border-zinc-200 bg-white px-3 py-1.5 text-zinc-900 focus:border-zinc-400 focus:outline-none"
               >
                 <option value="Founding Engineer">Founding Engineer</option>
                 <option value="Full-Stack">Full-Stack</option>
@@ -153,38 +153,38 @@ export function AddStartupModal({ isOpen, onClose, onAddRole }: AddStartupModalP
           </div>
 
           <div>
-            <label className="block text-zinc-400 mb-1 font-medium">Required Skills (comma-separated)</label>
+            <label className="block text-zinc-600 mb-1 font-medium">Required Skills (comma-separated)</label>
             <input
               type="text"
               placeholder="TypeScript, Rust, PostgreSQL"
               value={skillsStr}
               onChange={(e) => setSkillsStr(e.target.value)}
-              className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
+              className="w-full rounded border border-zinc-200 bg-white px-3 py-1.5 text-zinc-900 focus:border-zinc-400 focus:outline-none"
             />
           </div>
 
           <div>
-            <label className="block text-zinc-400 mb-1 font-medium">Recent Milestone (Hook for cold email)</label>
+            <label className="block text-zinc-600 mb-1 font-medium">Recent Milestone (Hook for cold email)</label>
             <input
               type="text"
               placeholder="e.g. Announced $4M Seed round / launched v2 on Hacker News"
               value={recentMilestone}
               onChange={(e) => setRecentMilestone(e.target.value)}
-              className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
+              className="w-full rounded border border-zinc-200 bg-white px-3 py-1.5 text-zinc-900 focus:border-zinc-400 focus:outline-none"
             />
           </div>
 
-          <div className="flex items-center justify-end gap-2 pt-3 border-t border-zinc-800">
+          <div className="flex items-center justify-end gap-2 pt-3 border-t border-zinc-200">
             <button
               type="button"
               onClick={onClose}
-              className="rounded border border-zinc-800 px-3 py-1.5 text-zinc-400 hover:text-zinc-200"
+              className="rounded border border-zinc-200 px-3 py-1.5 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="rounded bg-white px-3.5 py-1.5 font-medium text-black hover:bg-zinc-200 transition-colors"
+              className="rounded bg-zinc-900 px-3.5 py-1.5 font-medium text-white hover:bg-zinc-800 transition-colors"
             >
               Add Startup
             </button>

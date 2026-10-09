@@ -93,19 +93,19 @@ export function PitchGenerator({
     <div className="space-y-5 max-w-5xl mx-auto">
       
       {/* Title */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-zinc-800 pb-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-zinc-200 pb-4">
         <div>
-          <h1 className="text-xl font-bold tracking-tight text-white">
+          <h1 className="text-xl font-bold tracking-tight text-zinc-950">
             Cold Pitch Generator
           </h1>
-          <p className="text-xs text-zinc-400 mt-0.5">
+          <p className="text-xs text-zinc-500 mt-0.5">
             Minimal, anti-cliché emails engineered for startup founders. Under 100 words with verifiable metrics.
           </p>
         </div>
 
         <button
           onClick={handlePushToQueue}
-          className="flex items-center gap-1.5 rounded bg-white px-3.5 py-1.5 text-xs font-semibold text-black hover:bg-zinc-200 transition-colors"
+          className="flex items-center gap-1.5 rounded bg-zinc-900 px-3.5 py-1.5 text-xs font-semibold text-white hover:bg-zinc-800 transition-colors"
         >
           <Mail className="h-3.5 w-3.5" />
           <span>Queue for Bulk Outreach ({targetRoles.length})</span>
@@ -121,15 +121,15 @@ export function PitchGenerator({
             <button
               key={preset.id}
               onClick={() => setSelectedPresetId(preset.id)}
-              className={`p-3 text-left rounded border transition-colors ${
+              className={`p-3 text-left rounded border transition-colors shadow-2xs ${
                 isSelected
-                  ? 'border-zinc-500 bg-zinc-900 text-white'
-                  : 'border-zinc-800 bg-black text-zinc-400 hover:border-zinc-700 hover:text-zinc-200'
+                  ? 'border-zinc-900 bg-zinc-50 text-zinc-950'
+                  : 'border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300 hover:bg-zinc-50'
               }`}
             >
-              <div className="flex items-center justify-between text-xs font-semibold">
+              <div className="flex items-center justify-between text-xs font-semibold text-zinc-900">
                 <span>{preset.name}</span>
-                <span className="text-[10px] font-mono text-zinc-500">~{preset.wordCountTarget}w</span>
+                <span className="text-[10px] font-mono text-zinc-400">~{preset.wordCountTarget}w</span>
               </div>
               <p className="text-[11px] text-zinc-500 mt-1 line-clamp-2">
                 {preset.tagline}
@@ -143,8 +143,8 @@ export function PitchGenerator({
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
         
         {/* Startup switcher */}
-        <div className="lg:col-span-4 rounded border border-zinc-800 bg-black p-3 space-y-2">
-          <span className="text-xs font-medium text-zinc-400 block">
+        <div className="lg:col-span-4 rounded border border-zinc-200 bg-white p-3 space-y-2 shadow-2xs">
+          <span className="text-xs font-medium text-zinc-700 block">
             Inspect Output by Startup:
           </span>
           <div className="space-y-1 max-h-72 overflow-y-auto">
@@ -154,15 +154,15 @@ export function PitchGenerator({
                 onClick={() => setPreviewRoleId(r.id)}
                 className={`w-full flex items-center justify-between p-2 rounded text-xs text-left transition-colors ${
                   currentPreviewRole?.id === r.id
-                    ? 'bg-zinc-800 text-white font-medium'
-                    : 'text-zinc-400 hover:bg-zinc-900 hover:text-zinc-200'
+                    ? 'bg-zinc-100 text-zinc-950 font-medium'
+                    : 'text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900'
                 }`}
               >
                 <div className="truncate">
-                  <span className="font-medium text-zinc-200">{r.company}</span>
+                  <span className="font-medium text-zinc-900">{r.company}</span>
                   <span className="text-zinc-500 text-[11px] ml-1.5 truncate">({r.founderName})</span>
                 </div>
-                <span className="text-[10px] font-mono text-zinc-400 shrink-0 ml-2">
+                <span className="text-[10px] font-mono text-zinc-500 shrink-0 ml-2">
                   {r.matchScore || 85}%
                 </span>
               </button>
@@ -171,37 +171,37 @@ export function PitchGenerator({
         </div>
 
         {/* Email Box */}
-        <div className="lg:col-span-8 rounded border border-zinc-800 bg-black p-4 space-y-3">
+        <div className="lg:col-span-8 rounded border border-zinc-200 bg-white p-4 space-y-3 shadow-2xs">
           
-          <div className="flex items-center justify-between border-b border-zinc-800 pb-2.5">
-            <span className="text-xs font-mono text-zinc-400">
+          <div className="flex items-center justify-between border-b border-zinc-200 pb-2.5">
+            <span className="text-xs font-mono text-zinc-600">
               To: {currentPreviewRole?.founderName} &lt;{currentPreviewRole?.email}&gt;
             </span>
 
             <div className="flex items-center gap-2">
-              <span className="rounded bg-zinc-900 border border-zinc-800 px-2 py-0.5 text-[10px] font-mono text-zinc-300">
+              <span className="rounded bg-zinc-100 border border-zinc-200 px-2 py-0.5 text-[10px] font-mono text-zinc-700">
                 {wordCount} words
               </span>
               <button
                 onClick={handleCopy}
-                className="flex items-center gap-1 rounded border border-zinc-800 px-2 py-0.5 text-xs text-zinc-400 hover:text-white hover:bg-zinc-900 transition-colors"
+                className="flex items-center gap-1 rounded border border-zinc-200 px-2 py-0.5 text-xs text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50 transition-colors shadow-2xs"
               >
-                {copied ? <Check className="h-3 w-3 text-white" /> : <Copy className="h-3 w-3" />}
+                {copied ? <Check className="h-3 w-3 text-zinc-900" /> : <Copy className="h-3 w-3" />}
                 <span>{copied ? 'Copied' : 'Copy'}</span>
               </button>
             </div>
           </div>
 
           <div className="space-y-1">
-            <span className="text-[10px] font-mono uppercase tracking-wider text-zinc-500">Subject</span>
-            <div className="rounded border border-zinc-800 bg-zinc-950 px-3 py-1.5 font-mono text-xs text-zinc-200">
+            <span className="text-[10px] font-mono uppercase tracking-wider text-zinc-400">Subject</span>
+            <div className="rounded border border-zinc-200 bg-zinc-50 px-3 py-1.5 font-mono text-xs text-zinc-900">
               {generatedSubject}
             </div>
           </div>
 
           <div className="space-y-1">
-            <span className="text-[10px] font-mono uppercase tracking-wider text-zinc-500">Body</span>
-            <div className="rounded border border-zinc-800 bg-zinc-950 p-3 font-mono text-xs text-zinc-200 leading-relaxed whitespace-pre-wrap">
+            <span className="text-[10px] font-mono uppercase tracking-wider text-zinc-400">Body</span>
+            <div className="rounded border border-zinc-200 bg-zinc-50 p-3 font-mono text-xs text-zinc-900 leading-relaxed whitespace-pre-wrap">
               {generatedBody}
             </div>
           </div>
