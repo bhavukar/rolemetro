@@ -1,0 +1,30 @@
+{
+  "name": "rolemetro",
+  "version": "1.0.0",
+  "description": "The open-source Mailmeteor for startup roles — parse your resume, match top startup jobs, generate minimal high-conversion cold emails, and launch founder outreach campaigns.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.479.0",
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0"
+  }
+}
