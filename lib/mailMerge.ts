@@ -30,14 +30,25 @@ export function interpolateTemplate(
 
   const variables: Record<string, string> = {
     first_name: firstName,
+    firstName: firstName,
+    'First Name': firstName,
     founder_name: role.founderName,
+    founderName: role.founderName,
+    'Contact Name': role.founderName,
     company: role.company,
+    Company: role.company,
     role: role.roleTitle,
+    roleTitle: role.roleTitle,
+    'Role Title': role.roleTitle,
     candidate_name: candidate.name,
+    candidateName: candidate.name,
     candidate_email: candidate.email,
+    candidateEmail: candidate.email,
     top_skills: topSkills,
+    mySkills: topSkills,
     tech_stack: techStack,
     highlight_project: highlightProject,
+    myTopProject: `${highlightProject} (${projectMetric})`,
     project_metric: projectMetric,
     project_description: projectDescription,
     recent_milestone: recentMilestone,
@@ -50,7 +61,8 @@ export function interpolateTemplate(
 
   let result = template;
   for (const [key, val] of Object.entries(variables)) {
-    const regex = new RegExp(`{{${key}}}`, 'g');
+    const escapedKey = key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`{{${escapedKey}}}`, 'g');
     result = result.replace(regex, val);
   }
 

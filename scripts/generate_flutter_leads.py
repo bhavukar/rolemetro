@@ -13,15 +13,39 @@ def main():
         json.dump(FLUTTER_LEADS, f, indent=2, ensure_ascii=False)
     print(f"Written to {json_path}")
 
-    # Write CSV
+    # Write Standard CSV
     csv_path = "/Users/bhavukarora/IdeaProjects/rolemetro/public/flutter_founding_jobs_100.csv"
-    fieldnames = ["company", "roleTitle", "founderName", "founderRole", "email", "website", "location", "isRemote", "salaryRange", "stage", "description", "category"]
+    fieldnames = ["firstName", "founderName", "email", "company", "roleTitle", "founderRole", "website", "location", "isRemote", "salaryRange", "stage", "description", "category"]
     with open(csv_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
         writer.writeheader()
         for lead in FLUTTER_LEADS:
-            writer.writerow(lead)
+            row = dict(lead)
+            row["firstName"] = lead["founderName"].split()[0] if lead.get("founderName") else "there"
+            writer.writerow(row)
     print(f"Written to {csv_path}")
+
+    # Write Mailmeteor / Google Sheets ready CSV
+    sheets_csv_path = "/Users/bhavukarora/IdeaProjects/rolemetro/public/flutter_cold_outreach_google_sheets.csv"
+    sheets_headers = ["First Name", "Contact Name", "Email", "Company", "Target Role", "Title", "Website", "Location", "Salary Range", "Stage"]
+    with open(sheets_csv_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(sheets_headers)
+        for lead in FLUTTER_LEADS:
+            first_name = lead["founderName"].split()[0] if lead.get("founderName") else "there"
+            writer.writerow([
+                first_name,
+                lead["founderName"],
+                lead["email"],
+                lead["company"],
+                lead["roleTitle"],
+                lead["founderRole"],
+                lead["website"],
+                lead["location"],
+                lead["salaryRange"],
+                lead["stage"]
+            ])
+    print(f"Written to {sheets_csv_path}")
 
     # Write TypeScript lib/defaultJobs.ts
     ts_path = "/Users/bhavukarora/IdeaProjects/rolemetro/lib/defaultJobs.ts"

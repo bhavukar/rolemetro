@@ -1,0 +1,139 @@
+First Name,Contact Name,Email,Company,Target Role,Title,Website,Location,Salary Range,Stage
+Misbah,Misbah Ashraf,misbah@jar.app,Jar,Founding Mobile Engineer (Flutter),Co-founder & CPO/Tech,https://jar.app,"Bengaluru, India / Remote",₹28L - ₹45L + ESOPs,Series B ($58M raised)
+CP,CP Murali,murali@cred.club,CRED,Staff / Lead Mobile Engineer (Flutter),Head of Engineering,https://cred.club,"Bengaluru, India / Remote",₹45L - ₹75L + Generous Equity,Series F ($800M raised)
+Kush,Kush Taneja,kush@fampay.in,FamPay,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://fampay.in,"Bengaluru, India / Remote",₹24L - ₹40L + ESOPs,Series A ($42M raised)
+Archit,Archit Gupta,archit@sliceit.com,Slice,Lead Flutter Engineer (Mobile Infra),VP of Engineering,https://sliceit.com,"Bengaluru, India / Remote",₹35L - ₹55L + ESOPs,Series C (Unicorn)
+Vaibhav,Vaibhav Kalpe,vaibhav@khatabook.com,Khatabook,Founding / Senior Flutter Engineer,Head of Mobile Engineering,https://khatabook.com,"Bengaluru, India / Remote",₹28L - ₹48L + ESOPs,Series C ($186M raised)
+Sandeep,Sandeep Ghoshal,sandeep@jupiter.money,Jupiter Money,Staff Mobile Engineer (Flutter),Head of Mobile Engineering,https://jupiter.money,Mumbai / Bengaluru / Remote,₹40L - ₹65L + Equity,Series C ($160M raised)
+Sumit,Sumit Gwalani,sumit@fi.money,Fi Money,Founding Mobile Engineer (Flutter),Co-founder & Head of Product/Eng,https://fi.money,"Bengaluru, India / Remote",₹35L - ₹50L + ESOPs,Series C ($140M raised)
+Pratik,Pratik Daulatabadkar,pratik@decentro.tech,Decentro,Founding Flutter SDK Architect,Co-founder & CTO,https://decentro.tech,"Bengaluru, India / Remote",₹26L - ₹42L + Equity,Series A ($16M raised)
+Alankar,Alankar Saxena,alankar@mudrex.com,Mudrex,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://mudrex.com,"Bengaluru, India / Remote",₹28L - ₹45L + ESOPs,"Series A (YC W19, $22M)"
+Vatsal,Vatsal Singhal,vatsal@ultrahuman.com,Ultrahuman,Lead Mobile Engineer (Flutter),Co-founder & CTO,https://ultrahuman.com,"Bengaluru, India / Remote",₹32L - ₹55L + Equity,Series B ($45M raised)
+Subhash,Subhash Choudhary,subhash@mydukaan.io,Dukaan,Founding Mobile Lead (Flutter),Co-founder & CTO,https://mydukaan.io,"Bengaluru, India / Remote",₹30L - ₹50L + ESOPs,Series A ($17M raised)
+Prateek,Prateek Dixit,prateek@pocketfm.com,Pocket FM,Staff Mobile Engineer (Audio & Flutter),Co-founder & CTO,https://pocketfm.com,"Bengaluru, India / Remote",₹40L - ₹65L + Equity,Series D ($196M raised)
+Anmol,Anmol Jain,anmol@astrotalk.com,AstroTalk,Founding Mobile Engineer (Flutter),Head of Engineering / Tech Lead,https://astrotalk.com,"Noida, India / Remote",₹30L - ₹55L + ESOPs,"Series A ($20M raised, High Profit)"
+Vikas,Vikas Goyal,vikas@kukufm.com,Kuku FM,Lead Flutter Engineer,Co-founder & CTO,https://kukufm.com,"Mumbai, India / Remote",₹28L - ₹48L + ESOPs,Series C ($72M raised)
+Prashant,Prashant Gupta,prashant@pratilipi.com,Pratilipi,Senior / Lead Flutter Developer,Co-founder & Head of Engineering,https://pratilipi.com,"Bengaluru, India / Remote",₹26L - ₹42L + ESOPs,Series D ($78M raised)
+Saurabh,Saurabh Arora,saurabh@plumhq.com,Plum,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://plumhq.com,"Bengaluru, India / Remote",₹28L - ₹46L + Equity,"Series A (Tiger Global, $20M)"
+Prateek,Prateek Sharma,prateek@invideo.io,InVideo,Lead Mobile Architect (Flutter),Head of Mobile,https://invideo.io,"Mumbai, India / Remote",₹38L - ₹60L + ESOPs,Series A ($52M raised)
+Jayakumar,Jayakumar Karumbasalam,jay@superops.ai,SuperOps.ai,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://superops.ai,"Chennai, India / Remote",₹25L - ₹42L + Equity,Series B ($26M raised)
+Naveen,Naveen Dewangan,naveen@kutumb.app,Kutumb,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://kutumb.app,"Bengaluru, India / Remote",₹28L - ₹45L + ESOPs,"Series A (Sequoia, $26M)"
+Firasat,Firasat Ali,firasat@loco.gg,Loco,Lead Mobile Gaming Stream Engineer (Flutter),VP of Engineering,https://loco.gg,"Bengaluru, India / Remote",₹30L - ₹50L + ESOPs,Series A ($42M raised)
+Chanchal,Chanchal Kurele,chanchal@winzogames.com,WinZO,Staff Flutter Engineer,VP of Engineering,https://winzogames.com,"Delhi, India / Remote",₹35L - ₹60L + ESOPs,Series C ($100M raised)
+Manas,Manas Singh,manas@apna.co,Apna,Founding Mobile Engineer (Flutter),Head of Engineering,https://apna.co,"Bengaluru, India / Remote",₹32L - ₹55L + ESOPs,Series C (Unicorn)
+Vikas,Vikas Choudhary,vikas@porter.in,Porter,Lead Flutter Engineer (Driver Experience),Co-founder & CTO,https://porter.in,"Bengaluru, India / Remote",₹30L - ₹48L + ESOPs,Series E (Unicorn)
+Reeju,Reeju Datta,reeju@cashfree.com,Cashfree Payments,Founding Mobile SDK Architect (Flutter),Co-founder & VP Engineering,https://cashfree.com,"Bengaluru, India / Remote",₹30L - ₹52L + ESOPs,Series B ($42M raised)
+Neeraj,Neeraj Singh,neeraj@groww.in,Groww,Lead Mobile Engineer (Flutter),Co-founder & CTO,https://groww.in,"Bengaluru, India / Remote",₹40L - ₹65L + Equity,Series E ($390M raised)
+Amit,Amit Bhatnagar,amit@indmoney.com,INDmoney,Founding / Lead Mobile Engineer (Flutter),Chief Technology Officer,https://indmoney.com,"Gurgaon, India / Remote",₹35L - ₹60L + ESOPs,Series D ($140M raised)
+Rohan,Rohan Gupta,rohan@smallcase.com,Smallcase,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://smallcase.com,"Bengaluru, India / Remote",₹28L - ₹45L + ESOPs,Series C ($62M raised)
+Neeraj,Neeraj Khandelwal,neeraj@coindcx.com,CoinDCX,Senior / Lead Mobile Engineer (Flutter),Co-founder & CTO,https://coindcx.com,"Mumbai, India / Remote",₹32L - ₹52L + ESOPs,Series D (Unicorn)
+Rupesh,Rupesh Kumar,rupesh@getonecard.com,OneCard,Staff Mobile Engineer (Flutter),Co-founder & CTO,https://getonecard.com,"Pune, India / Remote",₹38L - ₹60L + ESOPs,Series D (Unicorn)
+Gautam,Gautam Arora,gautam@toddleapp.com,Toddle,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://toddleapp.com,"Bengaluru, India / Remote",₹25L - ₹42L + ESOPs,Series A ($17M raised)
+Rashid,Rashid Khan,rashid@yellow.ai,Yellow.ai,Lead Mobile SDK Engineer (Flutter),Co-founder & Chief Product/Tech Officer,https://yellow.ai,"Bengaluru, India / Remote",₹30L - ₹50L + ESOPs,Series C ($102M raised)
+Ishwar,Ishwar Sridharan,ishwar@exotel.com,Exotel,Senior / Lead Flutter Engineer,Co-founder & Head of Tech,https://exotel.com,"Bengaluru, India / Remote",₹28L - ₹46L + Equity,Series D ($100M raised)
+Nakul,Nakul Aggarwal,nakul@browserstack.com,BrowserStack,Staff Mobile Engineer (Flutter Infra),Co-founder & CTO,https://browserstack.com,"Mumbai, India / Remote",₹45L - ₹75L + Generous Equity,Bootstrapped / Profitable ($4B+ val)
+Ankit,Ankit Sobti,ankit@postman.com,Postman,Senior Mobile Engineer (Flutter),Co-founder & CTO,https://postman.com,"Bengaluru, India / Remote",₹42L - ₹70L + Equity,Series D ($433M raised)
+Rajoshi,Rajoshi Ghosh,rajoshi@hasura.io,Hasura,Mobile / Flutter Developer Advocate & Engineer,Co-founder & Head of Eng,https://hasura.io,"Bengaluru, India / Remote",₹35L - ₹55L + Equity,Series C (Unicorn)
+Ankit,Ankit Nayan,ankit@signoz.io,SigNoz,Founding Mobile Observability Engineer,Co-founder & CTO,https://signoz.io,Remote Worldwide (India friendly),$80k - $140k + Equity,Series A (YC W21)
+Arpit,Arpit Mohan,arpit@appsmith.com,Appsmith,Founding Mobile Engineer,Co-founder & CTO,https://appsmith.com,"Bengaluru, India / Remote",₹32L - ₹50L + Equity,Series B ($51M raised)
+Pranav,Pranav Raj,pranav@chatwoot.com,Chatwoot,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://chatwoot.com,Remote Worldwide (India friendly),$60k - $110k + Equity,"Seed (Open Source, YC W21)"
+Rahul,Rahul Shingala,rahul@dhiwise.com,DhiWise,Founding Flutter Core Architect,Co-founder & CTO,https://dhiwise.com,Surat / Bengaluru / Remote,₹28L - ₹46L + Equity,Series A ($9M raised)
+Jitin,Jitin Pillai,jitin@dyte.io,Dyte,Founding Flutter Video SDK Engineer,Co-founder & CTO,https://dyte.io,"Bengaluru, India / Remote",₹26L - ₹44L + Equity,"Seed (YC W21, $5M)"
+Sarvesh,Sarvesh Dwivedi,sarvesh@100ms.live,100ms,Lead Mobile SDK Engineer (Flutter),Co-founder & VP Engineering,https://100ms.live,"Bengaluru, India / Remote",₹32L - ₹52L + ESOPs,"Series A (Accel, $25M)"
+Denver,Denver Dsouza,denver@devfolio.co,Devfolio,Founding Mobile Engineer (Flutter),Co-founder & Head of Eng,https://devfolio.co,"Bengaluru, India / Remote",₹22L - ₹36L + Equity,Seed (High Community Impact)
+Anuj,Anuj Mittal,anuj@stimuler.co,Stimuler,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://stimuler.com,"Bengaluru, India / Remote",₹24L - ₹42L + ESOPs,Seed (AI Consumer)
+Tarun,Tarun Gupta,tarun@taru.money,Taru.money,Founding Mobile Engineer (Flutter),Founder & Lead Architect,https://taru.money,Remote (India),₹25L - ₹40L + Generous Equity,Early Stage / Seed
+Sadhish,Sadhish Balasubramanian,sadhish@lysto.io,Lysto,Lead Flutter Engineer (Web3 & Mobile),Founder & CTO,https://lysto.io,"Bengaluru, India / Remote",₹28L - ₹46L + Equity,Series A ($12M raised)
+Jamil,Jamil Ahmad,jamil@fashinza.com,Fashinza,Senior / Lead Mobile Engineer,Co-founder & Head of Tech,https://fashinza.com,"Gurgaon, India / Remote",₹26L - ₹42L + ESOPs,Series B ($135M raised)
+Vishesh,Vishesh Khurana,vishesh@shiprocket.com,Shiprocket,Staff Mobile Engineer (Flutter),Co-founder & Tech Initiatives,https://shiprocket.com,"Delhi, India / Remote",₹32L - ₹52L + ESOPs,Series E (Unicorn)
+Bhaswat,Bhaswat Agarwal,bhaswat@classplus.co,Classplus,Lead Mobile Architect (Flutter),Co-founder & COO/Tech,https://classplus.co,"Noida, India / Remote",₹35L - ₹55L + ESOPs,Series D ($160M raised)
+Srinath,Srinath Ramakkrushnan,srinath@zetwerk.com,Zetwerk,Founding Mobile Engineer (Flutter),Co-founder & Head of Tech,https://zetwerk.com,"Bengaluru, India / Remote",₹30L - ₹50L + ESOPs,Series F (Unicorn)
+Raghav,Raghav Chandra,raghav@urbancompany.com,Urban Company,Lead Mobile Engineer (Partner Flutter App),Co-founder & CTO,https://urbancompany.com,"Gurgaon, India / Remote",₹36L - ₹58L + ESOPs,Series F (Unicorn)
+Eric,Eric Seidel,eric@shorebird.dev,Shorebird,Founding Engineer (Flutter Code Push & Tools),Founder & Creator of Flutter,https://shorebird.dev,Remote Worldwide,$160k - $220k + Generous Equity,Seed (Founded by Flutter's original founder)
+Daniel,Daniel Vestergaard,daniel@reflectly.app,Reflectly,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://reflectly.app,Remote Worldwide,$120k - $180k + Equity,Profitable / High Growth
+Steffen,Steffen Kiedel,steffen@superlist.com,Superlist,Senior / Lead Mobile Engineer (Flutter),CTO & Head of Engineering,https://superlist.com,Remote Worldwide,$130k - $190k + Equity,Series A (Superlist)
+Nick,Nick Verwymeren,nick@lineleap.com,LineLeap,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://lineleap.com,Remote Worldwide,$120k - $170k + Equity,Series A (YC W20)
+Wayne,Wayne Chang,wayne@spruceid.com,SpruceID,Founding Mobile Engineer (Digital Identity),Founder & Lead Architect,https://spruceid.com,Remote Worldwide,$140k - $200k + Equity,"Series A (YC S21, $34M)"
+Artur,Artur Ashyrov,artur.ashyrov@gr8.tech,GR8_TECH,Founding Mobile Architect (Flutter),Chief Technology Officer,https://gr8.tech,Remote Worldwide,$110k - $160k,High Growth B2B Platform
+David,David DeRemer,david@verygood.ventures,Very Good Ventures,Lead Flutter Solutions Architect,Managing Director & Tech Lead,https://verygood.ventures,Remote Worldwide,$130k - $180k + Benefits,Premier Flutter Consultancy
+Mateusz,Mateusz Wojtczak,mateusz@leancode.co,LeanCode,Senior / Lead Flutter Engineer,Head of Mobile,https://leancode.co,Remote Worldwide,$90k - $140k,High Growth Mobile Studio
+Matias,Matias Duarte,matias@somniosoftware.com,Somnio Software,Founding Mobile Architect (Flutter),CTO & Mobile Lead,https://somniosoftware.com,Remote Worldwide,$85k - $130k,Fast-Growing Flutter Consultancy
+Priit,Priit Latt,priit@codemagic.io,Codemagic,Founding Mobile CI/CD Engineer (Flutter),Head of Engineering,https://codemagic.io,Remote Worldwide,$110k - $160k + Equity,Series A ($5M raised)
+Mike,Mike Diarmid,mike@invertase.io,Invertase,Lead Mobile / Flutter Tools Engineer,Founder & FlutterFire Maintainer,https://invertase.io,Remote Worldwide,$130k - $185k + Equity,Creators of FlutterFire & Melos
+Bu,Bu Kinoshita,bu@resend.com,Resend,Founding Mobile Engineer,Co-founder & Head of Product/Eng,https://resend.com,Remote Worldwide,$160k - $210k + Equity,Series A (YC W23)
+Ant,Ant Wilson,ant@supabase.com,Supabase,Mobile SDK & App Engineer (Flutter),Co-founder & CTO,https://supabase.com,Remote Worldwide,$160k - $220k + Equity,Series C (YC S20)
+Miguel,Miguel Carranza,miguel@revenuecat.com,RevenueCat,Staff Mobile Engineer (Flutter In-App Purchases),Co-founder & CTO,https://revenuecat.com,Remote Worldwide,$160k - $215k + Equity,Series C (YC S18)
+Tommaso,Tommaso Barbugli,tommaso@getstream.io,Stream,Lead Flutter Chat & Video SDK Engineer,Co-founder & CTO,https://getstream.io,Remote Worldwide,$140k - $190k + Equity,Series B ($58M raised)
+Eldad,Eldad Fux,eldad@appwrite.io,Appwrite,Lead Mobile Ecosystem Engineer (Flutter),Founder & Lead Architect,https://appwrite.io,Remote Worldwide,$130k - $180k + Equity,Series A ($37M raised)
+Alex,Alex van Andel,alex@cal.com,Cal.com,Founding Mobile Engineer (Flutter),Head of Engineering,https://cal.com,Remote Worldwide,$120k - $180k + Equity,Series A (Open Source)
+Steven,Steven Tey,steven@dub.co,Dub.co,Founding Mobile Engineer (Flutter),Founder & Solo Builder,https://dub.co,Remote Worldwide,$140k - $190k + Equity,Seed ($3M raised)
+Matt,Matt Aitken,matt@trigger.dev,Trigger.dev,Founding Mobile Engineer (Flutter),Founder & CTO,https://trigger.dev,Remote Worldwide,$130k - $180k + Equity,Seed (YC W23)
+Angelo,Angelo Saraceno,angelo@railway.app,Railway,Founding Mobile Client Engineer,Head of Engineering,https://railway.app,Remote Worldwide,$150k - $210k + Equity,Series A ($20M raised)
+Tim,Tim Glaser,tim@posthog.com,PostHog,Mobile SDK Architect (Flutter),Co-founder & CTO,https://posthog.com,Remote Worldwide,$140k - $200k + Equity,Series B (YC W20)
+Petr,Petr Nikolaev,petr@raycast.com,Raycast,Founding Mobile Companion Engineer,Co-founder & CTO,https://raycast.com,Remote Worldwide,$140k - $190k + Equity,"Series A (Accel, YC W20)"
+Tuomas,Tuomas Artman,artman@linear.app,Linear,Mobile Client Engineer (Flutter),Co-founder & CTO,https://linear.app,Remote Worldwide,$170k - $230k + Generous Equity,Series B (Sequoia)
+David,David Jou,david@amity.co,Amity,Lead Mobile SDK Architect (Flutter),Head of Mobile & Platform,https://amity.co,Remote Worldwide,$100k - $150k,Series B ($60M raised)
+Edward,Edward Wible,edward.wible@nubank.com.br,Nubank,Principal / Staff Mobile Engineer (Flutter),Co-founder & Chief Architectural Officer,https://nubank.com.br,Remote Worldwide,$160k - $240k + Equity,Public ($50B+ Market Cap)
+Mobile,Mobile Engineering Lead,mobile-careers@betterment.com,Betterment,Senior / Lead Flutter Engineer,Head of Mobile Engineering,https://betterment.com,Remote (US / Worldwide),$150k - $200k + Benefits,Series F ($435M raised)
+Mobile,Mobile Lead Architect,dev-hiring@trustwallet.com,Trust Wallet,Lead Mobile Architect (Flutter),Lead Mobile Architect,https://trustwallet.com,Remote Worldwide,$140k - $200k + Token Equity,High Profit / 140M+ Users
+Noah,Noah Zinsmeister,noah@uniswap.org,Uniswap Labs,Founding Mobile Engineer (Flutter),Head of Engineering,https://uniswap.org,Remote Worldwide,$170k - $240k + Generous Equity,Series B ($175M raised)
+Charles,Charles Guillemet,charles.guillemet@ledger.com,Ledger,Lead Mobile App Architect (Flutter),Chief Technology Officer,https://ledger.com,Remote Worldwide,$130k - $185k + Equity,Series C ($380M raised)
+Pavol,Pavol Rusnak,stick@satoshilabs.com,Trezor / SatoshiLabs,Senior / Lead Flutter Developer,Co-founder & Chief Tech Lead,https://trezor.io,Remote Worldwide,$110k - $160k,Bootstrapped & Highly Profitable
+Ben,Ben Peters,ben@bitso.com,Bitso,Staff Mobile Engineer (Flutter),Co-founder & CPO/CTO,https://bitso.com,Remote Worldwide,$130k - $180k + Equity,Series C (Unicorn)
+Vishnu,Vishnu Patankar,tech-hiring@kraken.com,Kraken,Senior Mobile Engineer (Flutter / Client),Chief Technology Officer,https://kraken.com,Remote Worldwide,$150k - $210k + Equity,High Growth ($10B+ val)
+Harsh,Harsh Sinha,harsh.sinha@wise.com,Wise,Lead Mobile Platform Engineer (Flutter),Chief Technology Officer,https://wise.com,Remote Worldwide,$140k - $190k + Equity,Public (LSE)
+Vlad,Vlad Yatsenko,vlad@revolut.com,Revolut,Staff Mobile Engineer (Flutter),Co-founder & CTO,https://revolut.com,Remote Worldwide,$150k - $220k + Equity,Series E ($45B val)
+Matej,Matej Pfajfar,matej@monzo.com,Monzo,Senior Mobile Engineer (Flutter),Chief Technology Officer,https://monzo.com,Remote Worldwide,$140k - $195k + Equity,Series I ($5B+ val)
+Marco,Marco Cancellieri,marco@traderepublic.com,Trade Republic,Staff Mobile Engineer (Flutter),Co-founder & Head of Engineering,https://traderepublic.com,Remote Worldwide,$140k - $200k + Equity,Series C (Unicorn)
+Christian,Christian Trummer,christian.trummer@bitpanda.com,Bitpanda,Lead Mobile Architect (Flutter),Co-founder & CTO,https://bitpanda.com,Remote Worldwide,$125k - $175k + Equity,Series C (Unicorn)
+Sven,Sven Martin,sven@tradewindow.io,TradeWindow,Lead Mobile Engineer (Flutter),Chief Technology Officer,https://tradewindow.io,Remote Worldwide,$110k - $160k,Public / High Growth
+Lucas,Lucas Ngoo,lucas@carousell.com,Carousell,Staff Mobile Engineer (Flutter),Co-founder & CTO,https://carousell.com,Remote Worldwide,$110k - $165k + Equity,Series C (Unicorn)
+Suthen,Suthen Thomas,suthen.thomas@grab.com,Grab,Lead Mobile Engineer (Merchant Flutter App),Group Chief Technology Officer,https://grab.com,Remote Worldwide,$130k - $190k + Equity,Public (NASDAQ)
+Mobile,Mobile Architecture Lead,tech-recruiting@toss.im,Toss / Viva Republica,Lead Mobile Architect (Flutter),Head of Mobile Platform,https://toss.im,Remote Worldwide,$140k - $210k + Equity,Series G ($9B val)
+Severin,Severin Balanque,severin@gojek.com,Gojek,Staff Mobile Engineer (Flutter),Head of Mobile Platform,https://gojek.com,Remote Worldwide,$130k - $185k + Equity,Public (GoTo)
+Oleg,Oleg Shardin,oleg@miro.com,Miro,Mobile Canvas Engineer (Flutter),Co-founder & VP Engineering,https://miro.com,Remote Worldwide,$150k - $215k + Equity,Series C ($17B val)
+Simon,Simon Last,simon@makenotion.com,Notion,Mobile Engineer (Native & Flutter Bridge),Co-founder & Head of Architecture,https://notion.so,Remote Worldwide,$170k - $240k + Generous Equity,Series C ($10B val)
+Kris,Kris Rasmussen,kris@figma.com,Figma,Mobile Client Engineer (Flutter / Canvas),Chief Technology Officer,https://figma.com,Remote Worldwide,$180k - $250k + Equity,Series E ($12B+ val)
+Malte,Malte Ubl,malte@vercel.com,Vercel,Mobile Engineer (Flutter & React Native Tools),Chief Technology Officer,https://vercel.com,Remote Worldwide,$170k - $230k + Equity,Series E ($3.25B val)
+Tim,Tim Glaser,tim@posthog.com,PostHog Mobile,Founding Mobile Engineer,Co-founder & CTO,https://posthog.com,Remote Worldwide,$140k - $200k + Equity,Series B (YC W20)
+Niilo,Niilo Säämänen,niilo@wolt.com,Wolt,Staff Mobile Engineer (Merchant Flutter Client),Chief Technology Officer,https://wolt.com,Remote Worldwide,$130k - $185k,Acquired by DoorDash ($8B)
+Technical,Technical Lead,tech@michaelcassel.com,Hamilton Musical,Lead Mobile Flutter Developer,Technical Director (Mobile),https://hamiltonmusical.com,Remote Worldwide,$110k - $160k,Global Enterprise Entertainment
+Mobile,Mobile Architecture Director,connecteddrive@bmw.com,BMW Group,Lead Flutter Architect (My BMW App),Head of Mobile Architecture,https://www.bmw.com,Remote Worldwide (EU/Global),$140k - $190k + Benefits,Global Automotive Group
+Engineering,Engineering Director,hue-engineering@signify.com,Philips Hue / Signify,Staff Mobile Engineer (Flutter & IoT),Director of Mobile Innovation,https://www.philips-hue.com,Remote Worldwide,$135k - $185k,Global Smart Home
+Karim,Karim Nour,karim@kashat.com,Kashat,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://kashat.com,Remote Worldwide,$90k - $140k + Equity,Series A ($5M raised)
+Maijid,Maijid Moujaled,maijid@chippercash.com,Chipper Cash,Lead Mobile Engineer (Flutter),Co-founder & CTO,https://chippercash.com,Remote Worldwide,$140k - $195k + Equity,Series C (Decacorn Backed)
+Musty,Musty Mustapha,musty@kudabank.com,Kuda Bank,Staff Mobile Engineer (Flutter),Co-founder & CTO,https://kuda.com,Remote Worldwide,$120k - $170k + Equity,Series B ($90M raised)
+Will,Will Kim,will@trykarat.com,Karat,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://trykarat.com,Remote Worldwide,$130k - $180k + Generous Equity,"Series B (Will Smith, $70M)"
+Brian,Brian Vallelunga,brian@usebraintrust.com,Braintrust,Lead Mobile Engineer (Flutter),Head of Engineering,https://usebraintrust.com,Remote Worldwide,$130k - $180k + Token Grants,Series B ($100M+ val)
+Daniel,Daniel Lee,daniel@aurahealth.io,Aura Health,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://aurahealth.io,Remote Worldwide,$120k - $170k + Equity,Series A ($10M raised)
+Griff,Griff Green,griff@giveth.io,Giveth,Founding Mobile Engineer (Flutter),Founder & Lead Architect,https://giveth.io,Remote Worldwide,$90k - $140k + Crypto Grant,Public Good / DAO
+Scott,Scott Moore,scott@gitcoin.co,Gitcoin,Founding Mobile Engineer (Flutter),Co-founder & Head of Tech,https://gitcoin.co,Remote Worldwide,$120k - $170k + Tokens,Decentralized Grant Network
+Jarrad,Jarrad Hope,jarrad@status.im,Status.im,Core Flutter Mobile Architect,Co-founder & Tech Lead,https://status.im,Remote Worldwide,$130k - $190k,Private / Open Source ($100M+ Fund)
+Peteris,Peteris Erins,peteris@lens.xyz,Lens Protocol,Founding Mobile Engineer (Flutter),Head of Engineering,https://lens.xyz,Remote Worldwide,$150k - $210k + Equity,Series A ($15M raised)
+Varun,Varun Srinivasan,varun@warpcast.com,Farcaster Mobile (Warpcast),Senior / Lead Mobile Engineer,Co-founder & CTO,https://warpcast.com,Remote Worldwide,$180k - $250k + Generous Equity,"Series A (Paradigm, $150M raised)"
+Bill,Bill Sun,bill@cryptopond.xyz,Pond,Founding Mobile Engineer (Flutter),Founder & Lead Architect,https://cryptopond.xyz,Remote Worldwide,$130k - $180k + Equity,"Seed (Archetype, $7.5M)"
+Lars,Lars Krogvig,lars@nansen.ai,Nansen,Lead Mobile Portfolio Engineer (Flutter),Co-founder & CTO,https://nansen.ai,Remote Worldwide,$140k - $190k + Equity,Series B ($88M raised)
+Henry,Henry Fisher,henry@arkhamintelligence.com,Arkham Intelligence,Founding Mobile Engineer (Flutter),Chief Technology Officer,https://arkhamintelligence.com,Remote Worldwide,$140k - $200k + Equity,Series A ($12M raised)
+Suhail,Suhail Gangji,suhail@zapper.xyz,Zapper,Lead Mobile Architect (Flutter),Co-founder & CTO,https://zapper.xyz,Remote Worldwide,$130k - $185k + Equity,Series A ($15M raised)
+Mike,Mike Demarais,mike@rainbow.me,Rainbow Wallet,Senior Mobile Engineer (Flutter / Cross-Platform),Co-founder & Lead Architect,https://rainbow.me,Remote Worldwide,$160k - $220k + Equity,Series A ($18M raised)
+Francesco,Francesco Agosti,francesco@phantom.app,Phantom,Lead Mobile Platform Engineer,Co-founder & CTO,https://phantom.app,Remote Worldwide,$170k - $240k + Generous Equity,"Series B (a16z, $118M)"
+Brian,Brian Bondy,bbondy@brave.com,Brave Software,Senior Flutter / Mobile Tools Engineer,Co-founder & CTO,https://brave.com,Remote Worldwide,$150k - $205k + Equity,Private / 60M+ Active Users
+Caine,Caine Tighe,caine@duckduckgo.com,DuckDuckGo,Mobile Systems & Privacy Engineer,VP of Engineering,https://duckduckgo.com,Remote Worldwide,$150k - $210k + Stock,Profitable Private ($100M+ ARR)
+David,David Crawshaw,crawshaw@tailscale.com,Tailscale,Founding Mobile UX & Client Engineer,Co-founder & CTO,https://tailscale.com,Remote Worldwide,$160k - $220k + Equity,"Series B (Accel, $115M raised)"
+Pedro,Pedro Canahuati,pedro@1password.com,1Password,Lead Mobile Security Architect (Flutter),Chief Technology Officer,https://1password.com,Remote Worldwide,$160k - $220k + Stock,Series C ($920M raised)
+Kyle,Kyle Spearrin,kyle@bitwarden.com,Bitwarden,Staff Mobile Engineer (Flutter),Founder & CTO,https://bitwarden.com,Remote Worldwide,$140k - $190k,"Series B ($100M raised, Open Source)"
+Bart,Bart Butler,bart@proton.me,Proton,Lead Mobile Engineer (Flutter & Encryption),Chief Technology Officer,https://proton.me,Remote Worldwide (EU/Global),$130k - $185k,Independent & Profitable (100M+ Users)
+Fredrik,Fredrik Stromberg,fredrik@mullvad.net,Mullvad VPN,Senior / Lead Mobile Engineer (Flutter),Co-founder & Tech Lead,https://mullvad.net,Remote Worldwide,$120k - $170k,Independent & Highly Profitable
+Vladimir,Vladimir Prelovac,vladimir@kagi.com,Kagi,Founding Mobile Engineer (Flutter),Founder & Lead Architect,https://kagi.com,Remote Worldwide,$140k - $190k + Equity,Profitable & Fast Growing (Ad-free Search)
+Danilo,Danilo Bonardi,danilo@shinyfrog.net,Bear App (Shiny Frog),Founding Mobile Engineer,Co-founder & Lead Mobile Dev,https://bear.app,Remote Worldwide,$120k - $170k,Apple Design Award Winner
+Raphael,Raphael Schaad,raphael@cron.com,Cron / Notion Calendar,Mobile Calendar Architect,Head of Calendar Engineering,https://notion.so/calendar,Remote Worldwide,$170k - $240k + Equity,Acquired by Notion
+Tuomas,Tuomas Artman,artman@linear.app,Linear Mobile Team,Founding Mobile Architect,Co-founder & CTO,https://linear.app,Remote Worldwide,$180k - $250k + Equity,Series B (Sequoia)
+Pierre,Pierre Burgy,pierre@slite.com,Slite,Lead Mobile Engineer (Flutter),Head of Engineering,https://slite.com,Remote Worldwide,$120k - $170k + Equity,"Series A (Index Ventures, $15M)"
+Brian,Brian Shultz,brian@tango.us,Tango,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://tango.us,Remote Worldwide,$130k - $180k + Equity,Series A ($18M raised)
+Neha,Neha Sharma,neha@descript.com,Descript Mobile,Lead Mobile Media Engineer (Flutter),VP of Engineering,https://descript.com,Remote Worldwide,$170k - $230k + Equity,"Series C (OpenAI Fund, $100M)"
+Vinay,Vinay Hiremath,vinay@loom.com,Loom Mobile,Staff Mobile Engineer (Flutter & Screen Recorder),Co-founder & CTO,https://loom.com,Remote Worldwide,$160k - $220k + Equity,Acquired by Atlassian ($975M)
+Yun,Yun Fu,yun@otter.ai,Otter.ai,Lead Flutter Voice Engineer,Co-founder & VP Engineering,https://otter.ai,Remote Worldwide,$150k - $210k + Equity,Series B ($63M raised)
+Alejandro,Alejandro Matamala,alejandro@runwayml.com,Runway Mobile,Founding Mobile Engineer (GenAI Video in Flutter),Co-founder & Head of Product/Eng,https://runwayml.com,Remote Worldwide,$170k - $250k + Generous Equity,Series C ($237M raised)
+Chenlin,Chenlin Meng,chenlin@pika.art,Pika,Founding Mobile Engineer (Flutter),Co-founder & CTO,https://pika.art,Remote Worldwide,$160k - $230k + Equity,Series A ($135M raised)
+Wayne,Wayne Liang,wayne@heygen.com,HeyGen,Lead Mobile App Architect (Flutter),Co-founder & Chief Product/Tech Officer,https://heygen.com,Remote Worldwide,$160k - $220k + Equity,"Series A (Benchmark, $60M)"
+Piotr,Piotr Dabkowski,piotr@elevenlabs.io,ElevenLabs,Founding Mobile Audio Architect (Flutter),Co-founder & CTO,https://elevenlabs.io,Remote Worldwide,$180k - $260k + Generous Equity,"Series B (a16z, $1.1B val)"
