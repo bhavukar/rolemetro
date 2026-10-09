@@ -11,6 +11,7 @@ export interface CandidateProfile {
   phone?: string;
   location?: string;
   title: string;
+  seniority: 'Founding' | 'Lead' | 'Senior' | 'Mid' | 'Junior';
   skills: string[];
   experienceYears: number;
   summary: string;
@@ -21,13 +22,14 @@ export interface CandidateProfile {
 }
 
 export type RoleCategory = 
+  | 'All'
   | 'Founding Engineer'
   | 'Full-Stack'
   | 'AI / ML'
-  | 'Backend'
+  | 'Backend & Systems'
   | 'Frontend'
-  | 'Product Engineering'
-  | 'Systems & Infra';
+  | 'Mobile'
+  | 'DevOps & Infra';
 
 export interface StartupRole {
   id: string;
@@ -48,7 +50,7 @@ export interface StartupRole {
   category: RoleCategory;
 }
 
-export type PresetId = 'founding-engineer' | 'minimal-builder' | 'problem-teardown' | 'product-growth' | 'custom';
+export type PresetId = 'founding-engineer' | 'minimal-builder' | 'problem-teardown' | 'product-growth';
 
 export interface PitchPreset {
   id: PresetId;
@@ -59,12 +61,13 @@ export interface PitchPreset {
   bodyTemplate: string;
 }
 
-export type OutreachStatus = 'draft' | 'ready' | 'queued' | 'sent' | 'replied' | 'interview';
+export type OutreachStatus = 'pending' | 'ready' | 'sending' | 'sent' | 'failed' | 'replied';
 
 export interface OutreachItem {
   id: string;
   jobId: string;
   company: string;
+  website: string;
   recipientName: string;
   recipientEmail: string;
   roleTitle: string;
@@ -76,13 +79,21 @@ export interface OutreachItem {
   matchScore: number;
 }
 
-export interface UserSettings {
-  senderName: string;
+export interface EmailConnection {
+  provider: 'gmail_app' | 'smtp' | 'browser_direct';
+  connected: boolean;
   senderEmail: string;
-  senderPortfolio: string;
-  senderGithub: string;
-  senderSignature: string;
+  senderName: string;
+  appPassword?: string;
+  smtpHost?: string;
+  smtpPort?: string;
+  smtpUser?: string;
+  smtpPass?: string;
+  signature?: string;
+}
+
+export interface UserSettings {
   aiProvider: 'local' | 'gemini' | 'openai' | 'groq' | 'claude';
   apiKey?: string;
-  dispatchDelaySeconds: number;
+  batchDelayMs: number;
 }

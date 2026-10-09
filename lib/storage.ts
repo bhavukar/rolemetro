@@ -1,31 +1,35 @@
-import { CandidateProfile, StartupRole, OutreachItem, UserSettings } from './types';
-import { DEFAULT_CANDIDATE } from './resumeParser';
+import { CandidateProfile, StartupRole, OutreachItem, UserSettings, EmailConnection } from './types';
+import { EMPTY_PROFILE } from './resumeParser';
 import { DEFAULT_STARTUP_ROLES } from './defaultJobs';
 
 const STORAGE_KEYS = {
-  PROFILE: 'rolemetro_profile_v1',
-  ROLES: 'rolemetro_roles_v1',
-  CAMPAIGN: 'rolemetro_campaign_v1',
-  SETTINGS: 'rolemetro_settings_v1',
+  PROFILE: 'rolemetro_profile_v2',
+  ROLES: 'rolemetro_roles_v2',
+  CAMPAIGN: 'rolemetro_campaign_v2',
+  SETTINGS: 'rolemetro_settings_v2',
+  EMAIL_CONN: 'rolemetro_email_conn_v2',
+};
+
+export const DEFAULT_EMAIL_CONNECTION: EmailConnection = {
+  provider: 'browser_direct',
+  connected: false,
+  senderEmail: '',
+  senderName: '',
+  signature: 'Best,\nSent from RoleMetro'
 };
 
 export const DEFAULT_SETTINGS: UserSettings = {
-  senderName: DEFAULT_CANDIDATE.name,
-  senderEmail: DEFAULT_CANDIDATE.email,
-  senderPortfolio: DEFAULT_CANDIDATE.portfolioUrl || 'https://bhavuk.website',
-  senderGithub: DEFAULT_CANDIDATE.githubUrl || 'https://github.com/bhavukar',
-  senderSignature: 'Best,\nBhavuk Arora\nhttps://bhavuk.website',
   aiProvider: 'local',
-  dispatchDelaySeconds: 8,
+  batchDelayMs: 2500
 };
 
-export function loadProfile(): CandidateProfile {
-  if (typeof window === 'undefined') return DEFAULT_CANDIDATE;
+export function loadProfile(): CandidateProfile | null {
+  if (typeof window === 'undefined') return null;
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.PROFILE);
-    return raw ? JSON.parse(raw) : DEFAULT_CANDIDATE;
+    return raw ? JSON.parse(raw) : null;
   } catch {
-    return DEFAULT_CANDIDATE;
+    return null;
   }
 }
 
@@ -73,6 +77,25 @@ export function saveCampaign(items: OutreachItem[]): void {
     localStorage.setItem(STORAGE_KEYS.CAMPAIGN, JSON.stringify(items));
   } catch (e) {
     console.error('Failed to save campaign', e);
+  }
+}
+
+export function loadEmailConnection(): EmailConnection {
+  if (typeof window === 'undefined') return DEFAULT_EMAIL_CONNECTION;
+  try {
+    const raw = localStorage.getItem(STORAGE_KEYS.EMAIL_CONN);
+    return raw ? JSON.parse(raw) : DEFAULT_EMAIL_CONNECTION;
+  } catch {
+    return DEFAULT_EMAIL_CONNECTION;
+  }
+}
+
+export function saveEmailConnection(conn: EmailConnection): void {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(STORAGE_KEYS.EMAIL_CONN, JSON.stringify(conn));
+  } catch (e) {
+    console.error('Failed to save email connection', e);
   }
 }
 

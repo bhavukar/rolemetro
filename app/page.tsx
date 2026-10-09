@@ -6,74 +6,76 @@ import { ResumeUploader } from '../components/ResumeUploader';
 import { JobFinder } from '../components/JobFinder';
 import { PitchGenerator } from '../components/PitchGenerator';
 import { MailmeteorTable } from '../components/MailmeteorTable';
-import { EmailPreviewModal } from '../components/EmailPreviewModal';
+import { ConnectMailModal } from '../components/ConnectMailModal';
 import { AddStartupModal } from '../components/AddStartupModal';
-import { SettingsModal } from '../components/SettingsModal';
+import { EmailPreviewModal } from '../components/EmailPreviewModal';
 
-import { CandidateProfile, StartupRole, OutreachItem, UserSettings } from '../lib/types';
-import { DEFAULT_CANDIDATE } from '../lib/resumeParser';
+import { CandidateProfile, StartupRole, OutreachItem, EmailConnection } from '../lib/types';
 import { DEFAULT_STARTUP_ROLES } from '../lib/defaultJobs';
 import { 
   loadProfile, saveProfile, 
   loadRoles, saveRoles, 
   loadCampaign, saveCampaign, 
-  loadSettings, saveSettings, 
-  DEFAULT_SETTINGS 
+  loadEmailConnection, saveEmailConnection,
+  DEFAULT_EMAIL_CONNECTION
 } from '../lib/storage';
 import { PITCH_PRESETS } from '../lib/pitchTemplates';
 import { interpolateTemplate } from '../lib/mailMerge';
+import { DEMO_PROFILE } from '../lib/resumeParser';
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<'resume' | 'jobs' | 'pitch' | 'campaign'>('resume');
-  const [profile, setProfile] = useState<CandidateProfile>(DEFAULT_CANDIDATE);
+  const [activeTab, setActiveTab] = useState<'upload' | 'jobs' | 'pitch' | 'outreach'>('upload');
+  const [profile, setProfile] = useState<CandidateProfile | null>(null);
   const [roles, setRoles] = useState<StartupRole[]>(DEFAULT_STARTUP_ROLES);
   const [selectedRoleIds, setSelectedRoleIds] = useState<string[]>([
-    'supabase-founding',
-    'resend-product-eng',
-    'cognition-ai-eng',
-    'modal-infra'
+    'resend-eng',
+    'supabase-infra',
+    'cognition-ai',
+    'modal-systems'
   ]);
   const [campaign, setCampaign] = useState<OutreachItem[]>([]);
-  const [settings, setSettings] = useState<UserSettings>(DEFAULT_SETTINGS);
+  const [emailConn, setEmailConn] = useState<EmailConnection>(DEFAULT_EMAIL_CONNECTION);
 
   // Modals
-  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [isConnectMailOpen, setIsConnectMailOpen] = useState(false);
   const [isAddStartupOpen, setIsAddStartupOpen] = useState(false);
   const [previewingItem, setPreviewingItem] = useState<OutreachItem | null>(null);
 
-  // Hydration on client
+  // Hydration
   useEffect(() => {
     const p = loadProfile();
     const r = loadRoles();
     const c = loadCampaign();
-    const s = loadSettings();
+    const e = loadEmailConnection();
+
     setProfile(p);
     setRoles(r);
-    setSettings(s);
+    setEmailConn(e);
 
     if (c.length > 0) {
       setCampaign(c);
     } else {
-      // Initialize an initial campaign with the default preset for top roles
-      const defaultPreset = PITCH_PRESETS[0];
-      const initialCampaign: OutreachItem[] = r.slice(0, 4).map(role => ({
+      // Initialize starter campaign
+      const activeProf = p || DEMO_PROFILE;
+      const starterPreset = PITCH_PRESETS[0];
+      const initial: OutreachItem[] = r.slice(0, 4).map(role => ({
         id: `outreach-${role.id}`,
         jobId: role.id,
         company: role.company,
+        website: role.website,
         recipientName: role.founderName,
         recipientEmail: role.email,
         roleTitle: role.roleTitle,
-        subject: interpolateTemplate(defaultPreset.subjectTemplate, p, role),
-        body: interpolateTemplate(defaultPreset.bodyTemplate, p, role),
-        status: 'ready',
+        subject: interpolateTemplate(starterPreset.subjectTemplate, activeProf, role),
+        body: interpolateTemplate(starterPreset.bodyTemplate, activeProf, role),
+        status: 'pending',
         selected: true,
         matchScore: 94
       }));
-      setCampaign(initialCampaign);
+      setCampaign(initial);
     }
   }, []);
 
-  // Save changes to localStorage
   const handleUpdateProfile = (newProfile: CandidateProfile) => {
     setProfile(newProfile);
     saveProfile(newProfile);
@@ -89,12 +91,11 @@ export default function Home() {
     saveCampaign(newCampaign);
   };
 
-  const handleUpdateSettings = (newSettings: UserSettings) => {
-    setSettings(newSettings);
-    saveSettings(newSettings);
+  const handleUpdateEmailConn = (newConn: EmailConnection) => {
+    setEmailConn(newConn);
+    saveEmailConnection(newConn);
   };
 
-  // Toggle role selection
   const toggleSelectRole = (id: string) => {
     setSelectedRoleIds(prev =>
       prev.includes(id) ? prev.filter(item => item !== id) : [...prev, id]
@@ -116,22 +117,18 @@ export default function Home() {
   };
 
   const handleSavePreviewItem = (updatedItem: OutreachItem) => {
-    const updatedCampaign = campaign.map(item =>
+    const updated = campaign.map(item =>
       item.id === updatedItem.id ? updatedItem : item
     );
-    handleUpdateCampaign(updatedCampaign);
+    handleUpdateCampaign(updated);
   };
 
-  const handleClearCampaign = () => {
-    if (confirm('Are you sure you want to clear your current outreach queue?')) {
-      handleUpdateCampaign([]);
-    }
+  const handleClearQueue = () => {
+    handleUpdateCampaign([]);
   };
-
-  const sentCount = campaign.filter(c => c.status === 'sent').length;
 
   return (
-    <div className="min-h-screen flex flex-col justify-between">
+    <div className="min-h-screen bg-black text-zinc-100 flex flex-col justify-between">
       
       {/* Top Header */}
       <div>
@@ -139,14 +136,14 @@ export default function Home() {
           activeTab={activeTab}
           setActiveTab={setActiveTab}
           selectedJobsCount={selectedRoleIds.length}
-          campaignCount={campaign.length}
-          sentCount={sentCount}
-          onOpenSettings={() => setIsSettingsOpen(true)}
+          outreachCount={campaign.length}
+          emailConn={emailConn}
+          onOpenConnectMail={() => setIsConnectMailOpen(true)}
         />
 
-        {/* Main Content Area */}
-        <main className="px-4 py-8 sm:px-6 lg:px-8">
-          {activeTab === 'resume' && (
+        {/* Main Body */}
+        <main className="px-4 py-8 sm:px-6 max-w-6xl mx-auto w-full">
+          {activeTab === 'upload' && (
             <ResumeUploader
               profile={profile}
               setProfile={handleUpdateProfile}
@@ -173,58 +170,66 @@ export default function Home() {
               selectedRoleIds={selectedRoleIds}
               profile={profile}
               onApplyCampaign={(items) => handleUpdateCampaign(items)}
-              onProceedToCampaign={() => setActiveTab('campaign')}
+              onProceedToCampaign={() => setActiveTab('outreach')}
             />
           )}
 
-          {activeTab === 'campaign' && (
+          {activeTab === 'outreach' && (
             <MailmeteorTable
               items={campaign}
               setItems={setCampaign}
+              emailConn={emailConn}
+              onOpenConnectMail={() => setIsConnectMailOpen(true)}
               onPreviewItem={(item) => setPreviewingItem(item)}
-              onClearCampaign={handleClearCampaign}
+              onClearQueue={handleClearQueue}
             />
           )}
         </main>
       </div>
 
-      {/* Footer */}
-      <footer className="border-t border-zinc-900 bg-zinc-950 py-8 px-4 text-center text-xs text-zinc-500">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      {/* Clean Monochrome Footer */}
+      <footer className="border-t border-zinc-900 bg-black py-6 px-4 text-xs text-zinc-500">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-2">
-            <span className="font-semibold text-zinc-300">RoleMetro</span>
-            <span>— The open-source cold outreach platform for startup builders</span>
+            <span className="font-medium text-zinc-300">RoleMetro</span>
+            <span>— Open-source startup outreach & bulk application engine</span>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 text-zinc-400">
             <a
               href="https://github.com/bhavukar/rolemetro"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-zinc-200 transition-colors"
+              className="hover:text-white transition-colors"
             >
-              GitHub Repo
+              GitHub
             </a>
-            <span className="text-zinc-700">•</span>
+            <span>•</span>
+            <button
+              onClick={() => setIsConnectMailOpen(true)}
+              className="hover:text-white transition-colors"
+            >
+              Connect Mail
+            </button>
+            <span>•</span>
             <a
               href="https://bhavuk.website"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-emerald-400 transition-colors"
+              className="hover:text-white transition-colors"
             >
-              Built by Bhavuk Arora
+              bhavuk.website
             </a>
-            <span className="text-zinc-700">•</span>
-            <span>MIT License</span>
           </div>
         </div>
       </footer>
 
       {/* Modals */}
-      <EmailPreviewModal
-        item={previewingItem}
-        onClose={() => setPreviewingItem(null)}
-        onSave={handleSavePreviewItem}
+      <ConnectMailModal
+        isOpen={isConnectMailOpen}
+        onClose={() => setIsConnectMailOpen(false)}
+        emailConn={emailConn}
+        onSave={handleUpdateEmailConn}
       />
 
       <AddStartupModal
@@ -233,11 +238,10 @@ export default function Home() {
         onAddRole={handleAddCustomRole}
       />
 
-      <SettingsModal
-        isOpen={isSettingsOpen}
-        onClose={() => setIsSettingsOpen(false)}
-        settings={settings}
-        onSave={handleUpdateSettings}
+      <EmailPreviewModal
+        item={previewingItem}
+        onClose={() => setPreviewingItem(null)}
+        onSave={handleSavePreviewItem}
       />
 
     </div>

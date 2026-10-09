@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { X, Plus, Building, Sparkles } from 'lucide-react';
+import { X, Plus, Building } from 'lucide-react';
 import { StartupRole, RoleCategory } from '../lib/types';
 
 interface AddStartupModalProps {
@@ -24,7 +24,7 @@ export function AddStartupModal({ isOpen, onClose, onAddRole }: AddStartupModalP
   const [stage, setStage] = useState('Seed / Series A');
   const [category, setCategory] = useState<RoleCategory>('Founding Engineer');
   const [skillsStr, setSkillsStr] = useState('TypeScript, Next.js, Systems');
-  const [recentMilestone, setRecentMilestone] = useState('Recently raised Seed round');
+  const [recentMilestone, setRecentMilestone] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -46,8 +46,8 @@ export function AddStartupModal({ isOpen, onClose, onAddRole }: AddStartupModalP
       stage: stage.trim(),
       description: `Building high-growth product at ${company}`,
       requiredSkills: skills.length > 0 ? skills : ['TypeScript', 'React'],
-      recentMilestone: recentMilestone.trim(),
-      category: category,
+      recentMilestone: recentMilestone.trim() || undefined,
+      category,
       matchScore: 92
     };
 
@@ -56,124 +56,121 @@ export function AddStartupModal({ isOpen, onClose, onAddRole }: AddStartupModalP
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
-      <div className="w-full max-w-xl rounded-2xl border border-zinc-800 bg-zinc-950 p-6 shadow-2xl space-y-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
+      <div className="w-full max-w-lg rounded-lg border border-zinc-800 bg-zinc-950 p-6 space-y-4">
         
         {/* Header */}
         <div className="flex items-center justify-between border-b border-zinc-800 pb-3">
           <div className="flex items-center gap-2">
-            <Building className="h-5 w-5 text-emerald-400" />
-            <h3 className="text-base font-bold text-zinc-100">Add Custom Target Startup</h3>
+            <Building className="h-4 w-4 text-zinc-300" />
+            <h3 className="text-sm font-semibold text-zinc-100">Add Custom Startup Lead</h3>
           </div>
           <button
             onClick={onClose}
-            className="rounded-lg p-1.5 text-zinc-400 hover:bg-zinc-800 hover:text-zinc-200 transition-colors"
+            className="rounded p-1 text-zinc-400 hover:bg-zinc-900 hover:text-zinc-200"
           >
-            <X className="h-5 w-5" />
+            <X className="h-4 w-4" />
           </button>
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="space-y-3.5 text-xs">
+        <form onSubmit={handleSubmit} className="space-y-3 text-xs">
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-zinc-400 font-medium mb-1">Company Name *</label>
+              <label className="block text-zinc-400 mb-1 font-medium">Company Name *</label>
               <input
                 type="text"
                 required
-                placeholder="e.g. Acme AI"
+                placeholder="e.g. Acme Labs"
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
-                className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-3 py-2 text-zinc-100 focus:border-emerald-500 focus:outline-none"
+                className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
               />
             </div>
-
             <div>
-              <label className="block text-zinc-400 font-medium mb-1">Website URL</label>
+              <label className="block text-zinc-400 mb-1 font-medium">Website</label>
               <input
                 type="text"
-                placeholder="https://acme.ai"
+                placeholder="https://acme.com"
                 value={website}
                 onChange={(e) => setWebsite(e.target.value)}
-                className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-3 py-2 text-zinc-100 focus:border-emerald-500 focus:outline-none"
+                className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
               />
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-zinc-400 font-medium mb-1">Founder / Recipient Name</label>
+              <label className="block text-zinc-400 mb-1 font-medium">Founder / Recipient Name</label>
               <input
                 type="text"
-                placeholder="e.g. Alex Rivera"
+                placeholder="Alex Rivera"
                 value={founderName}
                 onChange={(e) => setFounderName(e.target.value)}
-                className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-3 py-2 text-zinc-100 focus:border-emerald-500 focus:outline-none"
+                className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
               />
             </div>
-
             <div>
-              <label className="block text-zinc-400 font-medium mb-1">Recipient Email *</label>
+              <label className="block text-zinc-400 mb-1 font-medium">Recipient Email *</label>
               <input
                 type="email"
                 required
-                placeholder="alex@acme.ai"
+                placeholder="alex@acme.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-3 py-2 text-zinc-100 focus:border-emerald-500 focus:outline-none"
+                className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none font-mono"
               />
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-zinc-400 font-medium mb-1">Role Title</label>
+              <label className="block text-zinc-400 mb-1 font-medium">Role Title</label>
               <input
                 type="text"
                 placeholder="Founding Engineer"
                 value={roleTitle}
                 onChange={(e) => setRoleTitle(e.target.value)}
-                className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-3 py-2 text-zinc-100 focus:border-emerald-500 focus:outline-none"
+                className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
               />
             </div>
-
             <div>
-              <label className="block text-zinc-400 font-medium mb-1">Category</label>
+              <label className="block text-zinc-400 mb-1 font-medium">Category</label>
               <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value as RoleCategory)}
-                className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-3 py-2 text-zinc-100 focus:border-emerald-500 focus:outline-none"
+                className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
               >
                 <option value="Founding Engineer">Founding Engineer</option>
-                <option value="Systems & Infra">Systems & Infra</option>
-                <option value="Product Engineering">Product Engineering</option>
-                <option value="AI / ML">AI / ML</option>
                 <option value="Full-Stack">Full-Stack</option>
+                <option value="Backend & Systems">Backend & Systems</option>
+                <option value="AI / ML">AI / ML</option>
                 <option value="Frontend">Frontend</option>
+                <option value="DevOps & Infra">DevOps & Infra</option>
               </select>
             </div>
           </div>
 
           <div>
-            <label className="block text-zinc-400 font-medium mb-1">Required Skills (comma-separated)</label>
+            <label className="block text-zinc-400 mb-1 font-medium">Required Skills (comma-separated)</label>
             <input
               type="text"
-              placeholder="TypeScript, React, Python, Docker"
+              placeholder="TypeScript, Rust, PostgreSQL"
               value={skillsStr}
               onChange={(e) => setSkillsStr(e.target.value)}
-              className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-3 py-2 text-zinc-100 focus:border-emerald-500 focus:outline-none"
+              className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
             />
           </div>
 
           <div>
-            <label className="block text-zinc-400 font-medium mb-1">Recent Milestone or Observation (for Hook)</label>
+            <label className="block text-zinc-400 mb-1 font-medium">Recent Milestone (Hook for cold email)</label>
             <input
               type="text"
-              placeholder="e.g. Launched v2 on Product Hunt / Raised $5M Seed"
+              placeholder="e.g. Announced $4M Seed round / launched v2 on Hacker News"
               value={recentMilestone}
               onChange={(e) => setRecentMilestone(e.target.value)}
-              className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-3 py-2 text-zinc-100 focus:border-emerald-500 focus:outline-none"
+              className="w-full rounded border border-zinc-800 bg-black px-3 py-1.5 text-zinc-100 focus:border-zinc-500 focus:outline-none"
             />
           </div>
 
@@ -181,17 +178,15 @@ export function AddStartupModal({ isOpen, onClose, onAddRole }: AddStartupModalP
             <button
               type="button"
               onClick={onClose}
-              className="rounded-xl border border-zinc-800 px-4 py-2 text-zinc-400 hover:text-zinc-200"
+              className="rounded border border-zinc-800 px-3 py-1.5 text-zinc-400 hover:text-zinc-200"
             >
               Cancel
             </button>
-
             <button
               type="submit"
-              className="flex items-center gap-1.5 rounded-xl bg-emerald-500 px-4 py-2 font-bold text-zinc-950 hover:bg-emerald-400 transition-all shadow-md shadow-emerald-500/20"
+              className="rounded bg-white px-3.5 py-1.5 font-medium text-black hover:bg-zinc-200 transition-colors"
             >
-              <Plus className="h-4 w-4" />
-              <span>Add Startup</span>
+              Add Startup
             </button>
           </div>
 
