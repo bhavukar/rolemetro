@@ -16,14 +16,14 @@ export function AddStartupModal({ isOpen, onClose, onAddRole }: AddStartupModalP
   const [company, setCompany] = useState('');
   const [website, setWebsite] = useState('');
   const [founderName, setFounderName] = useState('');
-  const [founderRole, setFounderRole] = useState('Founder & CEO');
+  const [founderRole, setFounderRole] = useState('Co-founder & CTO');
   const [email, setEmail] = useState('');
-  const [roleTitle, setRoleTitle] = useState('Founding Engineer');
+  const [roleTitle, setRoleTitle] = useState('Founding Mobile Engineer');
   const [location, setLocation] = useState('Remote');
-  const [salaryRange, setSalaryRange] = useState('$160k - $220k + Equity');
+  const [salaryRange, setSalaryRange] = useState('₹30L - ₹50L + Equity');
   const [stage, setStage] = useState('Seed / Series A');
-  const [category, setCategory] = useState<RoleCategory>('Founding Engineer');
-  const [skillsStr, setSkillsStr] = useState('TypeScript, Next.js, Systems');
+  const [category, setCategory] = useState<RoleCategory>('Mobile');
+  const [skillsStr, setSkillsStr] = useState('Flutter, Dart, BLoC, Mobile Architecture');
   const [recentMilestone, setRecentMilestone] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -36,8 +36,8 @@ export function AddStartupModal({ isOpen, onClose, onAddRole }: AddStartupModalP
       id: `custom-${Date.now()}`,
       company: company.trim(),
       website: website.trim().startsWith('http') ? website.trim() : `https://${website.trim() || 'example.com'}`,
-      founderName: founderName.trim() || 'Founder',
-      founderRole: founderRole.trim() || 'Founder & CEO',
+      founderName: founderName.trim() || 'Tech Lead',
+      founderRole: founderRole.trim() || 'Co-founder & CTO',
       email: email.trim(),
       roleTitle: roleTitle.trim() || 'Founding Engineer',
       location: location.trim() || 'Remote',

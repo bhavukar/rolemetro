@@ -269,8 +269,8 @@ export function JobFinder({
                   <div className="font-medium text-xs text-zinc-900 flex items-center gap-1">
                     <User className="h-3 w-3 text-zinc-400" />
                     <span>{role.founderName}</span>
-                    <span className="text-[10px] text-zinc-400 font-normal">
-                      ({role.founderRole.split('&')[0].trim()})
+                    <span className="text-[10px] text-zinc-500 font-normal truncate max-w-[150px]" title={role.founderRole}>
+                      ({role.founderRole})
                     </span>
                   </div>
                   <div className="font-mono text-[11px] text-zinc-500 flex items-center gap-1">

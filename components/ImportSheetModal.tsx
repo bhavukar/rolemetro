@@ -42,8 +42,8 @@ export function ImportSheetModal({ isOpen, onClose, onImportRoles }: ImportSheet
 
       // Map columns: [Company, Role, Founder Name, Founder Email, Website]
       const company = cols[0] || 'Startup';
-      const roleTitle = cols[1] || 'Founding Engineer';
-      const founderName = cols[2] || 'Founder';
+      const roleTitle = cols[1] || 'Founding Mobile Engineer';
+      const founderName = cols[2] || 'Tech Lead';
       const email = cols[3] || (cols.find(c => c.includes('@')) || '');
       const website = cols[4] || `https://${company.toLowerCase().replace(/[^a-z0-9]/g, '')}.com`;
 
@@ -55,7 +55,7 @@ export function ImportSheetModal({ isOpen, onClose, onImportRoles }: ImportSheet
           founderName,
           email,
           website: website.startsWith('http') ? website : `https://${website}`,
-          founderRole: 'Founder & CEO',
+          founderRole: 'Co-founder & CTO',
           location: 'Remote',
           isRemote: true,
           salaryRange: 'Competitive',
