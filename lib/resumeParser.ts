@@ -40,6 +40,9 @@ export const DEMO_PROFILE: CandidateProfile = {
   githubUrl: 'https://github.com/alexrivera-dev',
   portfolioUrl: 'https://alexrivera.io',
   linkedinUrl: 'https://linkedin.com/in/alex-rivera-dev',
+  resumeFileName: 'Alex_Rivera_Resume.pdf',
+  resumeFileSize: '184 KB',
+  attachResume: true,
   keyProjects: [
     {
       name: 'Turbocache',

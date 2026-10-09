@@ -7,6 +7,7 @@ import { JobFinder } from '../components/JobFinder';
 import { PitchGenerator } from '../components/PitchGenerator';
 import { MailmeteorTable } from '../components/MailmeteorTable';
 import { AddStartupModal } from '../components/AddStartupModal';
+import { ImportSheetModal } from '../components/ImportSheetModal';
 import { EmailPreviewModal } from '../components/EmailPreviewModal';
 
 import { CandidateProfile, StartupRole, OutreachItem } from '../lib/types';
@@ -36,6 +37,7 @@ export default function Home() {
 
   // Modals
   const [isAddStartupOpen, setIsAddStartupOpen] = useState(false);
+  const [isImportSheetOpen, setIsImportSheetOpen] = useState(false);
   const [previewingItem, setPreviewingItem] = useState<OutreachItem | null>(null);
 
   // Listen to Firebase Auth state
@@ -145,6 +147,18 @@ export default function Home() {
     setSelectedRoleIds(prev => [newRole.id, ...prev]);
   };
 
+  const handleImportRoles = (importedRoles: StartupRole[]) => {
+    const updated = [...importedRoles, ...roles];
+    handleUpdateRoles(updated);
+    setSelectedRoleIds(prev => [...importedRoles.map(r => r.id), ...prev]);
+  };
+
+  const handleDeleteRole = (id: string) => {
+    const updated = roles.filter(r => r.id !== id);
+    handleUpdateRoles(updated);
+    setSelectedRoleIds(prev => prev.filter(rId => rId !== id));
+  };
+
   const handleSavePreviewItem = (updatedItem: OutreachItem) => {
     const updated = campaign.map(item =>
       item.id === updatedItem.id ? updatedItem : item
@@ -190,6 +204,8 @@ export default function Home() {
               deselectAllRoles={deselectAllRoles}
               profile={profile}
               onOpenAddStartup={() => setIsAddStartupOpen(true)}
+              onOpenImportSheet={() => setIsImportSheetOpen(true)}
+              onDeleteRole={handleDeleteRole}
               onProceedToPitch={() => setActiveTab('pitch')}
             />
           )}
@@ -259,6 +275,12 @@ export default function Home() {
         isOpen={isAddStartupOpen}
         onClose={() => setIsAddStartupOpen(false)}
         onAddRole={handleAddCustomRole}
+      />
+
+      <ImportSheetModal
+        isOpen={isImportSheetOpen}
+        onClose={() => setIsImportSheetOpen(false)}
+        onImportRoles={handleImportRoles}
       />
 
       <EmailPreviewModal

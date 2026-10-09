@@ -8,7 +8,9 @@ import {
   Eye, 
   Check, 
   Clock, 
-  Mail
+  Mail,
+  Paperclip,
+  CheckCircle2
 } from 'lucide-react';
 import { OutreachItem, OutreachStatus } from '../lib/types';
 import { buildGmailComposeUrl, exportToCsv } from '../lib/mailMerge';
@@ -129,10 +131,10 @@ export function MailmeteorTable({
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-zinc-200 pb-4">
         <div>
           <h1 className="text-xl font-bold tracking-tight text-zinc-950">
-            Bulk Outreach Queue
+            Bulk Outreach Dispatch
           </h1>
           <p className="text-xs text-zinc-500 mt-0.5">
-            Mailmeteor-style dispatch table. Review leads, verify personalizations, and bulk send to startup inboxes.
+            Mailmeteor-style dispatch table. Review leads, verify personalizations with resume attached, and bulk send to startup inboxes.
           </p>
         </div>
 
@@ -191,16 +193,16 @@ export function MailmeteorTable({
             Sender: {user ? user.email : 'Google Account Not Connected'}
           </span>
           <span className="text-zinc-500 font-mono text-[11px]">
-            ({user ? 'Firebase Auth Verified' : 'Sign in required for 1-click bulk'})
+            ({user ? 'Connected via Google' : 'Connect Google for 1-click bulk dispatch'})
           </span>
         </div>
 
         {!user && (
           <button
             onClick={onGoogleSignIn}
-            className="text-zinc-900 font-medium underline underline-offset-2 hover:text-black"
+            className="text-zinc-900 font-semibold underline underline-offset-2 hover:text-black"
           >
-            Sign in with Google
+            Connect Google Account
           </button>
         )}
       </div>
@@ -209,7 +211,7 @@ export function MailmeteorTable({
       <div className="rounded border border-zinc-200 bg-white overflow-hidden shadow-2xs">
         
         {/* Table sub-header */}
-        <div className="flex items-center justify-between px-4 py-2 border-b border-zinc-200 bg-zinc-50 text-xs text-zinc-500">
+        <div className="flex items-center justify-between px-4 py-2.5 border-b border-zinc-200 bg-zinc-50 text-xs text-zinc-500">
           <label className="flex items-center gap-2 cursor-pointer">
             <input
               type="checkbox"
@@ -217,7 +219,7 @@ export function MailmeteorTable({
               onChange={(e) => selectAll(e.target.checked)}
               className="rounded border-zinc-300 text-zinc-900 focus:ring-0"
             />
-            <span className="text-zinc-700">Select All</span>
+            <span className="text-zinc-700 font-medium">Select All</span>
           </label>
 
           <div className="flex items-center gap-3">
@@ -228,7 +230,7 @@ export function MailmeteorTable({
               className="hover:text-red-600 flex items-center gap-1 transition-colors"
             >
               <Trash2 className="h-3 w-3" />
-              <span>Clear</span>
+              <span>Clear Queue</span>
             </button>
           </div>
         </div>
@@ -248,17 +250,23 @@ export function MailmeteorTable({
                   className="mt-1 rounded border-zinc-300 text-zinc-900 focus:ring-0"
                 />
 
-                <div className="space-y-0.5">
+                <div className="space-y-1">
                   <div className="flex items-center gap-2">
                     <span className="font-semibold text-zinc-900">{item.company}</span>
                     <span className="text-zinc-500 font-mono text-[11px]">— {item.roleTitle}</span>
+                    {item.attachResume && (
+                      <span className="inline-flex items-center gap-1 rounded bg-zinc-100 border border-zinc-200 px-1.5 py-0.2 text-[10px] font-mono text-zinc-700">
+                        <Paperclip className="h-2.5 w-2.5 text-zinc-500" />
+                        <span>{item.resumeFileName || 'Resume.pdf'}</span>
+                      </span>
+                    )}
                   </div>
 
                   <div className="text-zinc-600 font-mono text-[11px]">
                     To: {item.recipientName} &lt;{item.recipientEmail}&gt;
                   </div>
 
-                  <p className="text-zinc-500 font-mono text-[11px] truncate max-w-lg mt-1">
+                  <p className="text-zinc-500 font-mono text-[11px] truncate max-w-lg mt-0.5">
                     &quot;{item.subject}&quot;
                   </p>
                 </div>
@@ -288,7 +296,7 @@ export function MailmeteorTable({
 
           {items.length === 0 && (
             <div className="p-8 text-center text-xs text-zinc-500">
-              No leads queued for outreach. Go to Step 2 (Startup Jobs) and Step 3 (Cold Pitch) to add targets.
+              No leads queued for outreach. Go to Leads Spreadsheet and Mail Merge Pitch to add targets.
             </div>
           )}
         </div>

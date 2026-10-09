@@ -43,7 +43,7 @@ export function Header({
                   : 'text-zinc-500 hover:text-zinc-900'
               }`}
             >
-              1. Resume Analysis
+              1. Resume
             </button>
             <button
               onClick={() => setActiveTab('jobs')}
@@ -53,7 +53,7 @@ export function Header({
                   : 'text-zinc-500 hover:text-zinc-900'
               }`}
             >
-              <span>2. Startup Jobs</span>
+              <span>2. Leads Spreadsheet</span>
               {selectedJobsCount > 0 && (
                 <span className="rounded bg-zinc-200 px-1.5 text-[10px] text-zinc-800 font-mono">
                   {selectedJobsCount}
@@ -68,7 +68,7 @@ export function Header({
                   : 'text-zinc-500 hover:text-zinc-900'
               }`}
             >
-              3. Cold Pitch
+              3. Mail Merge Pitch
             </button>
             <button
               onClick={() => setActiveTab('outreach')}
@@ -78,7 +78,7 @@ export function Header({
                   : 'text-zinc-500 hover:text-zinc-900'
               }`}
             >
-              <span>4. Bulk Outreach</span>
+              <span>4. Bulk Send</span>
               {outreachCount > 0 && (
                 <span className="rounded bg-zinc-900 text-white px-1.5 text-[10px] font-mono font-bold">
                   {outreachCount}
@@ -171,7 +171,7 @@ export function Header({
           onClick={() => setActiveTab('jobs')}
           className={`px-2 py-1 ${activeTab === 'jobs' ? 'text-zinc-950 font-semibold' : 'text-zinc-500'}`}
         >
-          Jobs ({selectedJobsCount})
+          Leads ({selectedJobsCount})
         </button>
         <button
           onClick={() => setActiveTab('pitch')}
@@ -183,7 +183,7 @@ export function Header({
           onClick={() => setActiveTab('outreach')}
           className={`px-2 py-1 ${activeTab === 'outreach' ? 'text-zinc-950 font-semibold' : 'text-zinc-500'}`}
         >
-          Outreach ({outreachCount})
+          Bulk ({outreachCount})
         </button>
       </div>
     </header>

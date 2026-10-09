@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { Copy, Check, ArrowRight, Mail } from 'lucide-react';
+import { Copy, Check, ArrowRight, Mail, Paperclip, CheckCircle2, Sliders } from 'lucide-react';
 import { StartupRole, CandidateProfile, OutreachItem } from '../lib/types';
 import { PITCH_PRESETS } from '../lib/pitchTemplates';
 import { interpolateTemplate } from '../lib/mailMerge';
@@ -15,6 +15,14 @@ interface PitchGeneratorProps {
   onProceedToCampaign: () => void;
 }
 
+const MERGE_TAGS = [
+  { tag: '{{founderName}}', desc: 'Recipient Name' },
+  { tag: '{{company}}', desc: 'Company Name' },
+  { tag: '{{roleTitle}}', desc: 'Target Role' },
+  { tag: '{{mySkills}}', desc: 'Your Tech Stack' },
+  { tag: '{{myTopProject}}', desc: 'Key Project & Metric' },
+];
+
 export function PitchGenerator({
   roles,
   selectedRoleIds,
@@ -26,6 +34,7 @@ export function PitchGenerator({
   const [previewRoleId, setPreviewRoleId] = useState<string>(
     selectedRoleIds[0] || (roles[0]?.id ?? '')
   );
+  const [attachResume, setAttachResume] = useState(true);
   const [copied, setCopied] = useState(false);
 
   const activeProfile = profile || DEMO_PROFILE;
@@ -81,7 +90,9 @@ export function PitchGenerator({
         body,
         status: 'pending',
         selected: true,
-        matchScore: role.matchScore || 85
+        matchScore: role.matchScore || 85,
+        attachResume,
+        resumeFileName: activeProfile.resumeFileName || 'Resume.pdf'
       };
     });
 
@@ -96,19 +107,19 @@ export function PitchGenerator({
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-zinc-200 pb-4">
         <div>
           <h1 className="text-xl font-bold tracking-tight text-zinc-950">
-            Cold Pitch Generator
+            Mail Merge Cold Pitch
           </h1>
           <p className="text-xs text-zinc-500 mt-0.5">
-            Minimal, anti-cliché emails engineered for startup founders. Under 100 words with verifiable metrics.
+            Concise, anti-cliché emails engineered for startup founders. Under 90 words with your resume attached.
           </p>
         </div>
 
         <button
           onClick={handlePushToQueue}
-          className="flex items-center gap-1.5 rounded bg-zinc-900 px-3.5 py-1.5 text-xs font-semibold text-white hover:bg-zinc-800 transition-colors"
+          className="flex items-center gap-1.5 rounded bg-zinc-900 px-4 py-2 text-xs font-semibold text-white hover:bg-zinc-800 transition-colors shadow-2xs"
         >
           <Mail className="h-3.5 w-3.5" />
-          <span>Queue for Bulk Outreach ({targetRoles.length})</span>
+          <span>Send to Bulk Dispatch Queue ({targetRoles.length})</span>
           <ArrowRight className="h-3.5 w-3.5" />
         </button>
       </div>
@@ -139,13 +150,53 @@ export function PitchGenerator({
         })}
       </div>
 
+      {/* Resume Attachment Banner & Merge Tags */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+        {/* Attachment Toggle */}
+        <div className="flex items-center justify-between rounded border border-zinc-200 bg-zinc-50 px-3 py-2">
+          <div className="flex items-center gap-2">
+            <Paperclip className="h-3.5 w-3.5 text-zinc-700" />
+            <span className="font-medium text-zinc-900">
+              {activeProfile.resumeFileName || 'Resume.pdf'}
+            </span>
+            <span className="text-[11px] text-zinc-500">
+              ({activeProfile.resumeFileSize || 'PDF Document'})
+            </span>
+          </div>
+
+          <label className="flex items-center gap-1.5 cursor-pointer text-zinc-700 font-medium select-none">
+            <input
+              type="checkbox"
+              checked={attachResume}
+              onChange={(e) => setAttachResume(e.target.checked)}
+              className="rounded border-zinc-300 text-zinc-900 focus:ring-0 cursor-pointer"
+            />
+            <span>Attach Resume</span>
+          </label>
+        </div>
+
+        {/* Merge Tags Guide */}
+        <div className="flex items-center gap-1.5 overflow-x-auto rounded border border-zinc-200 bg-white px-3 py-1.5 text-[11px]">
+          <span className="font-mono text-zinc-400 uppercase text-[10px] shrink-0">Tags:</span>
+          {MERGE_TAGS.map(t => (
+            <span
+              key={t.tag}
+              className="rounded bg-zinc-100 px-1.5 py-0.5 font-mono text-[10px] text-zinc-700 shrink-0"
+              title={t.desc}
+            >
+              {t.tag}
+            </span>
+          ))}
+        </div>
+      </div>
+
       {/* Preview Section */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
         
         {/* Startup switcher */}
         <div className="lg:col-span-4 rounded border border-zinc-200 bg-white p-3 space-y-2 shadow-2xs">
           <span className="text-xs font-medium text-zinc-700 block">
-            Inspect Output by Startup:
+            Inspect Output by Startup ({targetRoles.length}):
           </span>
           <div className="space-y-1 max-h-72 overflow-y-auto">
             {targetRoles.map(r => (
@@ -170,7 +221,7 @@ export function PitchGenerator({
           </div>
         </div>
 
-        {/* Email Box */}
+        {/* Email Preview Box */}
         <div className="lg:col-span-8 rounded border border-zinc-200 bg-white p-4 space-y-3 shadow-2xs">
           
           <div className="flex items-center justify-between border-b border-zinc-200 pb-2.5">
@@ -179,6 +230,12 @@ export function PitchGenerator({
             </span>
 
             <div className="flex items-center gap-2">
+              {attachResume && (
+                <span className="inline-flex items-center gap-1 rounded bg-zinc-100 border border-zinc-200 px-2 py-0.5 text-[10px] font-mono text-emerald-800">
+                  <Paperclip className="h-2.5 w-2.5" />
+                  <span>Resume Attached</span>
+                </span>
+              )}
               <span className="rounded bg-zinc-100 border border-zinc-200 px-2 py-0.5 text-[10px] font-mono text-zinc-700">
                 {wordCount} words
               </span>

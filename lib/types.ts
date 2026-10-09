@@ -26,6 +26,9 @@ export interface CandidateProfile {
   linkedinUrl?: string;
   keyProjects: KeyProject[];
   education?: EducationItem[];
+  resumeFileName?: string;
+  resumeFileSize?: string;
+  attachResume?: boolean;
   rawAiJson?: string;
   parsedBy?: 'free-ai' | 'heuristic' | 'demo';
 }
@@ -86,6 +89,8 @@ export interface OutreachItem {
   sentAt?: string;
   selected: boolean;
   matchScore: number;
+  attachResume?: boolean;
+  resumeFileName?: string;
 }
 
 export interface EmailConnection {
