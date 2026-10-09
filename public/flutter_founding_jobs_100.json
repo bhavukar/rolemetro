@@ -1,6 +1,4 @@
-import { StartupRole } from './types';
-
-export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
+[
   {
     "company": "Jar",
     "roleTitle": "Founding Mobile Engineer (Flutter)",
@@ -10,7 +8,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://jar.app",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b928L - \u20b945L + ESOPs",
+    "salaryRange": "₹28L - ₹45L + ESOPs",
     "stage": "Series B ($58M raised)",
     "description": "Architecting automated micro-savings and gold investment flows in Flutter for 20M+ users with sub-second payment settlement.",
     "requiredSkills": [
@@ -21,8 +19,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "iOS",
       "Fintech"
     ],
-    "category": "Mobile",
-    "id": "flutter-1-jar"
+    "category": "Mobile"
   },
   {
     "company": "CRED",
@@ -33,7 +30,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://cred.club",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b945L - \u20b975L + Generous Equity",
+    "salaryRange": "₹45L - ₹75L + Generous Equity",
     "stage": "Series F ($800M raised)",
     "description": "Leading design-heavy, buttery-smooth 120FPS custom animations, canvas shaders, and native bridges across high-trust financial products.",
     "requiredSkills": [
@@ -43,8 +40,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Native iOS/Android",
       "Performance"
     ],
-    "category": "Mobile",
-    "id": "flutter-2-cred"
+    "category": "Mobile"
   },
   {
     "company": "FamPay",
@@ -55,7 +51,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://fampay.in",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b924L - \u20b940L + ESOPs",
+    "salaryRange": "₹24L - ₹40L + ESOPs",
     "stage": "Series A ($42M raised)",
     "description": "Building India's largest neo-banking app for teens with custom UPI SDK integration and social payment streams in Flutter.",
     "requiredSkills": [
@@ -65,8 +61,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Riverpod",
       "Clean Architecture"
     ],
-    "category": "Mobile",
-    "id": "flutter-3-fampay"
+    "category": "Mobile"
   },
   {
     "company": "Slice",
@@ -77,7 +72,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://sliceit.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b935L - \u20b955L + ESOPs",
+    "salaryRange": "₹35L - ₹55L + ESOPs",
     "stage": "Series C (Unicorn)",
     "description": "Scaling banking core UI, credit assessment flows, and instant account opening with zero-jank Flutter mobile architecture.",
     "requiredSkills": [
@@ -87,8 +82,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Native MethodChannels",
       "CI/CD"
     ],
-    "category": "Mobile",
-    "id": "flutter-4-slice"
+    "category": "Mobile"
   },
   {
     "company": "Khatabook",
@@ -99,7 +93,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://khatabook.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b928L - \u20b948L + ESOPs",
+    "salaryRange": "₹28L - ₹48L + ESOPs",
     "stage": "Series C ($186M raised)",
     "description": "Architecting local-first offline ledger synchronization in Flutter handling billions in monthly merchant transactions across low-tier Android devices.",
     "requiredSkills": [
@@ -109,8 +103,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Offline-first Sync",
       "Android Optimization"
     ],
-    "category": "Mobile",
-    "id": "flutter-5-khatabook"
+    "category": "Mobile"
   },
   {
     "company": "Jupiter Money",
@@ -121,7 +114,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://jupiter.money",
     "location": "Mumbai / Bengaluru / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b940L - \u20b965L + Equity",
+    "salaryRange": "₹40L - ₹65L + Equity",
     "stage": "Series C ($160M raised)",
     "description": "Leading 1-click salary overdraft, mutual fund SIPs, and real-time biometric auth modules using modular Flutter packages.",
     "requiredSkills": [
@@ -132,8 +125,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Melos",
       "BLoC"
     ],
-    "category": "Mobile",
-    "id": "flutter-6-jupiter-money"
+    "category": "Mobile"
   },
   {
     "company": "Fi Money",
@@ -144,7 +136,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://fi.money",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b935L - \u20b950L + ESOPs",
+    "salaryRange": "₹35L - ₹50L + ESOPs",
     "stage": "Series C ($140M raised)",
     "description": "Designing wealth management and smart deposit accounts with automated goal-based savings engines in Flutter.",
     "requiredSkills": [
@@ -154,8 +146,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Native Android/iOS",
       "Fintech"
     ],
-    "category": "Mobile",
-    "id": "flutter-7-fi-money"
+    "category": "Mobile"
   },
   {
     "company": "Decentro",
@@ -166,7 +157,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://decentro.tech",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b926L - \u20b942L + Equity",
+    "salaryRange": "₹26L - ₹42L + Equity",
     "stage": "Series A ($16M raised)",
     "description": "Building drop-in Flutter SDKs for financial APIs, identity KYC, and embedded banking for thousands of developer clients.",
     "requiredSkills": [
@@ -176,8 +167,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "REST APIs",
       "Native Plugins"
     ],
-    "category": "Mobile",
-    "id": "flutter-8-decentro"
+    "category": "Mobile"
   },
   {
     "company": "Mudrex",
@@ -188,7 +178,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://mudrex.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b928L - \u20b945L + ESOPs",
+    "salaryRange": "₹28L - ₹45L + ESOPs",
     "stage": "Series A (YC W19, $22M)",
     "description": "Architecting global multi-currency crypto asset baskets, real-time WebSocket ticker updates, and biometric custodial security in Flutter.",
     "requiredSkills": [
@@ -198,8 +188,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "High Concurrency",
       "State Management"
     ],
-    "category": "Mobile",
-    "id": "flutter-9-mudrex"
+    "category": "Mobile"
   },
   {
     "company": "Ultrahuman",
@@ -210,7 +199,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://ultrahuman.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b932L - \u20b955L + Equity",
+    "salaryRange": "₹32L - ₹55L + Equity",
     "stage": "Series B ($45M raised)",
     "description": "Building the Ring AIR & M1 continuous glucose monitor companion app with BLE hardware streaming, dynamic sleep graphs, and metabolic health insights.",
     "requiredSkills": [
@@ -220,8 +209,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Data Visualization",
       "Hardware Sync"
     ],
-    "category": "Mobile",
-    "id": "flutter-10-ultrahuman"
+    "category": "Mobile"
   },
   {
     "company": "Dukaan",
@@ -232,7 +220,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://mydukaan.io",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b930L - \u20b950L + ESOPs",
+    "salaryRange": "₹30L - ₹50L + ESOPs",
     "stage": "Series A ($17M raised)",
     "description": "Engineering e-commerce store creator, order tracking, and inventory management apps in Flutter serving millions of SMB merchants.",
     "requiredSkills": [
@@ -242,8 +230,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Payment Gateways",
       "Push Notifications"
     ],
-    "category": "Mobile",
-    "id": "flutter-11-dukaan"
+    "category": "Mobile"
   },
   {
     "company": "Pocket FM",
@@ -254,7 +241,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://pocketfm.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b940L - \u20b965L + Equity",
+    "salaryRange": "₹40L - ₹65L + Equity",
     "stage": "Series D ($196M raised)",
     "description": "Scaling background audio streaming playback, personalized recommendation carousel, and offline audiobook downloads in Flutter for 100M+ users.",
     "requiredSkills": [
@@ -264,8 +251,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Dart",
       "Caching"
     ],
-    "category": "Mobile",
-    "id": "flutter-12-pocket-fm"
+    "category": "Mobile"
   },
   {
     "company": "AstroTalk",
@@ -276,7 +262,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://astrotalk.com",
     "location": "Noida, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b930L - \u20b955L + ESOPs",
+    "salaryRange": "₹30L - ₹55L + ESOPs",
     "stage": "Series A ($20M raised, High Profit)",
     "description": "Architecting low-latency live 1-on-1 video/audio calling, queue dispatch, and micro-transaction digital wallets in Flutter.",
     "requiredSkills": [
@@ -286,8 +272,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Dart",
       "High-load Payments"
     ],
-    "category": "Mobile",
-    "id": "flutter-13-astrotalk"
+    "category": "Mobile"
   },
   {
     "company": "Kuku FM",
@@ -298,7 +283,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://kukufm.com",
     "location": "Mumbai, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b928L - \u20b948L + ESOPs",
+    "salaryRange": "₹28L - ₹48L + ESOPs",
     "stage": "Series C ($72M raised)",
     "description": "Building vernacular audio OTT experience with localized state architecture, dynamic playlists, and lockscreen playback widgets.",
     "requiredSkills": [
@@ -308,8 +293,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Android MediaSession",
       "Riverpod"
     ],
-    "category": "Mobile",
-    "id": "flutter-14-kuku-fm"
+    "category": "Mobile"
   },
   {
     "company": "Pratilipi",
@@ -320,7 +304,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://pratilipi.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b926L - \u20b942L + ESOPs",
+    "salaryRange": "₹26L - ₹42L + ESOPs",
     "stage": "Series D ($78M raised)",
     "description": "Scaling India's premier digital storytelling platform with e-reader typography rendering, comics viewer, and audio stories in Flutter.",
     "requiredSkills": [
@@ -330,8 +314,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Offline Storage",
       "Performance"
     ],
-    "category": "Mobile",
-    "id": "flutter-15-pratilipi"
+    "category": "Mobile"
   },
   {
     "company": "Plum",
@@ -342,7 +325,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://plumhq.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b928L - \u20b946L + Equity",
+    "salaryRange": "₹28L - ₹46L + Equity",
     "stage": "Series A (Tiger Global, $20M)",
     "description": "Building modern group health insurance and corporate wellness app with cashless claims processing and telemedicine in Flutter.",
     "requiredSkills": [
@@ -352,8 +335,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "REST APIs",
       "Secure Storage"
     ],
-    "category": "Mobile",
-    "id": "flutter-16-plum"
+    "category": "Mobile"
   },
   {
     "company": "InVideo",
@@ -364,7 +346,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://invideo.io",
     "location": "Mumbai, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b938L - \u20b960L + ESOPs",
+    "salaryRange": "₹38L - ₹60L + ESOPs",
     "stage": "Series A ($52M raised)",
     "description": "Architecting AI mobile video generation canvas, video timeline scrubbing, and GPU-accelerated video rendering in Flutter.",
     "requiredSkills": [
@@ -374,8 +356,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Dart",
       "Video Processing"
     ],
-    "category": "Mobile",
-    "id": "flutter-17-invideo"
+    "category": "Mobile"
   },
   {
     "company": "SuperOps.ai",
@@ -386,7 +367,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://superops.ai",
     "location": "Chennai, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b925L - \u20b942L + Equity",
+    "salaryRange": "₹25L - ₹42L + Equity",
     "stage": "Series B ($26M raised)",
     "description": "Building enterprise PSA and RMM IT-management companion apps with real-time remote asset alerts and ticket dispatch in Flutter.",
     "requiredSkills": [
@@ -396,8 +377,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "WebSockets",
       "Push Notifications"
     ],
-    "category": "Mobile",
-    "id": "flutter-18-superops.ai"
+    "category": "Mobile"
   },
   {
     "company": "Kutumb",
@@ -408,7 +388,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://kutumb.app",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b928L - \u20b945L + ESOPs",
+    "salaryRange": "₹28L - ₹45L + ESOPs",
     "stage": "Series A (Sequoia, $26M)",
     "description": "Engineering community and social network for Bharat with rich feeds, audio discussions, and regional member directories in Flutter.",
     "requiredSkills": [
@@ -418,8 +398,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Media Uploads",
       "Android Optimization"
     ],
-    "category": "Mobile",
-    "id": "flutter-19-kutumb"
+    "category": "Mobile"
   },
   {
     "company": "Loco",
@@ -430,7 +409,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://loco.gg",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b930L - \u20b950L + ESOPs",
+    "salaryRange": "₹30L - ₹50L + ESOPs",
     "stage": "Series A ($42M raised)",
     "description": "Building low-latency esports live streaming, interactive chat overlays, and virtual gifting systems in Flutter.",
     "requiredSkills": [
@@ -440,8 +419,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Real-time Chat",
       "Custom Widgets"
     ],
-    "category": "Mobile",
-    "id": "flutter-20-loco"
+    "category": "Mobile"
   },
   {
     "company": "WinZO",
@@ -452,7 +430,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://winzogames.com",
     "location": "Delhi, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b935L - \u20b960L + ESOPs",
+    "salaryRange": "₹35L - ₹60L + ESOPs",
     "stage": "Series C ($100M raised)",
     "description": "Scaling India's premier social gaming app with multi-game micro-containers, instant multiplayer matchmaking, and fraud detection in Flutter.",
     "requiredSkills": [
@@ -462,8 +440,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Native Integration",
       "Zero Jank"
     ],
-    "category": "Mobile",
-    "id": "flutter-21-winzo"
+    "category": "Mobile"
   },
   {
     "company": "Apna",
@@ -474,7 +451,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://apna.co",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b932L - \u20b955L + ESOPs",
+    "salaryRange": "₹32L - ₹55L + ESOPs",
     "stage": "Series C (Unicorn)",
     "description": "Scaling jobs and professional community app for rising workforce with localized onboarding, card swiping, and automated resume building in Flutter.",
     "requiredSkills": [
@@ -484,8 +461,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Deep Linking",
       "Android"
     ],
-    "category": "Mobile",
-    "id": "flutter-22-apna"
+    "category": "Mobile"
   },
   {
     "company": "Porter",
@@ -496,7 +472,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://porter.in",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b930L - \u20b948L + ESOPs",
+    "salaryRange": "₹30L - ₹48L + ESOPs",
     "stage": "Series E (Unicorn)",
     "description": "Architecting driver companion app with continuous background GPS tracking, battery optimization, order matching, and offline receipts in Flutter.",
     "requiredSkills": [
@@ -506,8 +482,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Battery Optimization",
       "Google Maps SDK"
     ],
-    "category": "Mobile",
-    "id": "flutter-23-porter"
+    "category": "Mobile"
   },
   {
     "company": "Cashfree Payments",
@@ -518,7 +493,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://cashfree.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b930L - \u20b952L + ESOPs",
+    "salaryRange": "₹30L - ₹52L + ESOPs",
     "stage": "Series B ($42M raised)",
     "description": "Building drop-in checkout SDKs, seamless bank redirects, and intent-based UPI payments for thousands of apps in Flutter.",
     "requiredSkills": [
@@ -528,8 +503,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Security",
       "Native Bridges"
     ],
-    "category": "Mobile",
-    "id": "flutter-24-cashfree-payments"
+    "category": "Mobile"
   },
   {
     "company": "Groww",
@@ -540,7 +514,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://groww.in",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b940L - \u20b965L + Equity",
+    "salaryRange": "₹40L - ₹65L + Equity",
     "stage": "Series E ($390M raised)",
     "description": "Scaling India's largest retail stock brokerage and mutual funds investment UI with real-time trading charts, option chains, and orders in Flutter.",
     "requiredSkills": [
@@ -550,8 +524,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "WebSockets",
       "High Reliability"
     ],
-    "category": "Mobile",
-    "id": "flutter-25-groww"
+    "category": "Mobile"
   },
   {
     "company": "INDmoney",
@@ -562,7 +535,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://indmoney.com",
     "location": "Gurgaon, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b935L - \u20b960L + ESOPs",
+    "salaryRange": "₹35L - ₹60L + ESOPs",
     "stage": "Series D ($140M raised)",
     "description": "Building SuperMoney app tracking global stocks, US shares, fixed deposits, and credit scores with automated portfolio rebalancing in Flutter.",
     "requiredSkills": [
@@ -572,8 +545,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Security",
       "Complex State"
     ],
-    "category": "Mobile",
-    "id": "flutter-26-indmoney"
+    "category": "Mobile"
   },
   {
     "company": "Smallcase",
@@ -584,7 +556,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://smallcase.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b928L - \u20b945L + ESOPs",
+    "salaryRange": "₹28L - ₹45L + ESOPs",
     "stage": "Series C ($62M raised)",
     "description": "Building thematic investment discovery, broker gateway popups, and index tracking widgets in Flutter.",
     "requiredSkills": [
@@ -594,8 +566,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "State Management",
       "Charts"
     ],
-    "category": "Mobile",
-    "id": "flutter-27-smallcase"
+    "category": "Mobile"
   },
   {
     "company": "CoinDCX",
@@ -606,7 +577,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://coindcx.com",
     "location": "Mumbai, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b932L - \u20b952L + ESOPs",
+    "salaryRange": "₹32L - ₹52L + ESOPs",
     "stage": "Series D (Unicorn)",
     "description": "Engineering high-frequency crypto trading orderbook, margin trading screens, and custodial wallet key management in Flutter.",
     "requiredSkills": [
@@ -616,8 +587,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Security",
       "Orderbook UI"
     ],
-    "category": "Mobile",
-    "id": "flutter-28-coindcx"
+    "category": "Mobile"
   },
   {
     "company": "OneCard",
@@ -628,7 +598,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://getonecard.com",
     "location": "Pune, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b938L - \u20b960L + ESOPs",
+    "salaryRange": "₹38L - ₹60L + ESOPs",
     "stage": "Series D (Unicorn)",
     "description": "Architecting instant metallic credit card activation, spend analytics graphs, reward coin physics animations, and biometric payments in Flutter.",
     "requiredSkills": [
@@ -638,8 +608,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Biometrics",
       "Fintech"
     ],
-    "category": "Mobile",
-    "id": "flutter-29-onecard"
+    "category": "Mobile"
   },
   {
     "company": "Toddle",
@@ -650,7 +619,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://toddleapp.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b925L - \u20b942L + ESOPs",
+    "salaryRange": "₹25L - ₹42L + ESOPs",
     "stage": "Series A ($17M raised)",
     "description": "Building teaching and learning platform for IB World Schools with digital student portfolios, gradebooks, and collaborative canvases in Flutter.",
     "requiredSkills": [
@@ -660,8 +629,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Offline Cache",
       "EdTech"
     ],
-    "category": "Mobile",
-    "id": "flutter-30-toddle"
+    "category": "Mobile"
   },
   {
     "company": "Yellow.ai",
@@ -672,7 +640,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://yellow.ai",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b930L - \u20b950L + ESOPs",
+    "salaryRange": "₹30L - ₹50L + ESOPs",
     "stage": "Series C ($102M raised)",
     "description": "Building conversational enterprise AI agent chat SDKs with voice messaging, rich media cards, and webhook streaming in Flutter.",
     "requiredSkills": [
@@ -682,8 +650,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "SDK Distribution",
       "WebSockets"
     ],
-    "category": "Mobile",
-    "id": "flutter-31-yellow.ai"
+    "category": "Mobile"
   },
   {
     "company": "Exotel",
@@ -694,7 +661,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://exotel.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b928L - \u20b946L + Equity",
+    "salaryRange": "₹28L - ₹46L + Equity",
     "stage": "Series D ($100M raised)",
     "description": "Engineering full-stack customer engagement mobile client with VoIP calling, omni-channel messaging, and CRM sync in Flutter.",
     "requiredSkills": [
@@ -704,8 +671,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "WebSockets",
       "PushKit / CallKit"
     ],
-    "category": "Mobile",
-    "id": "flutter-32-exotel"
+    "category": "Mobile"
   },
   {
     "company": "BrowserStack",
@@ -716,7 +682,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://browserstack.com",
     "location": "Mumbai, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b945L - \u20b975L + Generous Equity",
+    "salaryRange": "₹45L - ₹75L + Generous Equity",
     "stage": "Bootstrapped / Profitable ($4B+ val)",
     "description": "Building automated mobile testing SDKs, test recorder harnesses, and device cloud streaming diagnostics for Flutter apps.",
     "requiredSkills": [
@@ -726,8 +692,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Android Debug Bridge",
       "Test Automation"
     ],
-    "category": "Mobile",
-    "id": "flutter-33-browserstack"
+    "category": "Mobile"
   },
   {
     "company": "Postman",
@@ -738,7 +703,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://postman.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b942L - \u20b970L + Equity",
+    "salaryRange": "₹42L - ₹70L + Equity",
     "stage": "Series D ($433M raised)",
     "description": "Architecting Postman's mobile companion experience for API testing, workspace collaboration, and collection execution in Flutter.",
     "requiredSkills": [
@@ -748,8 +713,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "State Management",
       "Desktop/Mobile"
     ],
-    "category": "Mobile",
-    "id": "flutter-34-postman"
+    "category": "Mobile"
   },
   {
     "company": "Hasura",
@@ -760,7 +724,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://hasura.io",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b935L - \u20b955L + Equity",
+    "salaryRange": "₹35L - ₹55L + Equity",
     "stage": "Series C (Unicorn)",
     "description": "Developing real-time GraphQL mobile client integrations, offline subscriptions, and reference applications in Flutter.",
     "requiredSkills": [
@@ -770,8 +734,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Postgres",
       "Client Caching"
     ],
-    "category": "Mobile",
-    "id": "flutter-35-hasura"
+    "category": "Mobile"
   },
   {
     "company": "SigNoz",
@@ -792,8 +755,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Native Crash Handlers",
       "Performance Metrics"
     ],
-    "category": "Mobile",
-    "id": "flutter-36-signoz"
+    "category": "Mobile"
   },
   {
     "company": "Appsmith",
@@ -804,7 +766,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://appsmith.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b932L - \u20b950L + Equity",
+    "salaryRange": "₹32L - ₹50L + Equity",
     "stage": "Series B ($51M raised)",
     "description": "Building mobile runtime for open-source internal tool builders with responsive layout canvas rendering in Flutter.",
     "requiredSkills": [
@@ -814,8 +776,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "JavaScript Bridges",
       "Open Source"
     ],
-    "category": "Mobile",
-    "id": "flutter-37-appsmith"
+    "category": "Mobile"
   },
   {
     "company": "Chatwoot",
@@ -836,8 +797,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Push Notifications",
       "Open Source"
     ],
-    "category": "Mobile",
-    "id": "flutter-38-chatwoot"
+    "category": "Mobile"
   },
   {
     "company": "DhiWise",
@@ -848,7 +808,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://dhiwise.com",
     "location": "Surat / Bengaluru / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b928L - \u20b946L + Equity",
+    "salaryRange": "₹28L - ₹46L + Equity",
     "stage": "Series A ($9M raised)",
     "description": "Architecting Figma-to-Flutter automated code generation compiler, AST parser, and design token mapping engines.",
     "requiredSkills": [
@@ -858,8 +818,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Figma API",
       "Code Generation"
     ],
-    "category": "Mobile",
-    "id": "flutter-39-dhiwise"
+    "category": "Mobile"
   },
   {
     "company": "Dyte",
@@ -870,7 +829,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://dyte.io",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b926L - \u20b944L + Equity",
+    "salaryRange": "₹26L - ₹44L + Equity",
     "stage": "Seed (YC W21, $5M)",
     "description": "Building real-time video/voice SDK widgets for Flutter with native WebRTC bindings, custom layout grids, and bandwidth adaptation.",
     "requiredSkills": [
@@ -880,8 +839,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Dart",
       "Media Pipelines"
     ],
-    "category": "Mobile",
-    "id": "flutter-40-dyte"
+    "category": "Mobile"
   },
   {
     "company": "100ms",
@@ -892,7 +850,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://100ms.live",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b932L - \u20b952L + ESOPs",
+    "salaryRange": "₹32L - ₹52L + ESOPs",
     "stage": "Series A (Accel, $25M)",
     "description": "Designing developer-first live streaming and interactive video conferencing Flutter SDKs with sub-100ms latency.",
     "requiredSkills": [
@@ -902,8 +860,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Audio/Video Pipelines",
       "SDK Architecture"
     ],
-    "category": "Mobile",
-    "id": "flutter-41-100ms"
+    "category": "Mobile"
   },
   {
     "company": "Devfolio",
@@ -914,7 +871,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://devfolio.co",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b922L - \u20b936L + Equity",
+    "salaryRange": "₹22L - ₹36L + Equity",
     "stage": "Seed (High Community Impact)",
     "description": "Building India's largest hackathon community mobile app with real-time project submissions, QR check-ins, and mentorship pairing in Flutter.",
     "requiredSkills": [
@@ -924,8 +881,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "QR Scanning",
       "Firebase"
     ],
-    "category": "Mobile",
-    "id": "flutter-42-devfolio"
+    "category": "Mobile"
   },
   {
     "company": "Stimuler",
@@ -936,7 +892,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://stimuler.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b924L - \u20b942L + ESOPs",
+    "salaryRange": "₹24L - ₹42L + ESOPs",
     "stage": "Seed (AI Consumer)",
     "description": "Architecting global AI English speech coach with real-time waveform audio recording, pitch detection, and instant evaluation cards in Flutter.",
     "requiredSkills": [
@@ -946,8 +902,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Real-time AI Streaming",
       "Smooth UI"
     ],
-    "category": "Mobile",
-    "id": "flutter-43-stimuler"
+    "category": "Mobile"
   },
   {
     "company": "Taru.money",
@@ -958,7 +913,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://taru.money",
     "location": "Remote (India)",
     "isRemote": true,
-    "salaryRange": "\u20b925L - \u20b940L + Generous Equity",
+    "salaryRange": "₹25L - ₹40L + Generous Equity",
     "stage": "Early Stage / Seed",
     "description": "Leading cross-platform personal finance, smart expense categorization, and net worth tracker in Flutter with zero data tracking.",
     "requiredSkills": [
@@ -968,8 +923,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Offline SQLite",
       "Riverpod"
     ],
-    "category": "Mobile",
-    "id": "flutter-44-taru.money"
+    "category": "Mobile"
   },
   {
     "company": "Lysto",
@@ -980,7 +934,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://lysto.io",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b928L - \u20b946L + Equity",
+    "salaryRange": "₹28L - ₹46L + Equity",
     "stage": "Series A ($12M raised)",
     "description": "Building gamer reputation passport mobile app with verifiable credential badges and low-friction game logins in Flutter.",
     "requiredSkills": [
@@ -990,8 +944,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Animations",
       "Deep Linking"
     ],
-    "category": "Mobile",
-    "id": "flutter-45-lysto"
+    "category": "Mobile"
   },
   {
     "company": "Fashinza",
@@ -1002,7 +955,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://fashinza.com",
     "location": "Gurgaon, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b926L - \u20b942L + ESOPs",
+    "salaryRange": "₹26L - ₹42L + ESOPs",
     "stage": "Series B ($135M raised)",
     "description": "Building global B2B apparel supply chain mobile app for apparel manufacturing floor tracking, live production CCTV, and sample approvals in Flutter.",
     "requiredSkills": [
@@ -1012,8 +965,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Camera / Media Pipelines",
       "REST APIs"
     ],
-    "category": "Mobile",
-    "id": "flutter-46-fashinza"
+    "category": "Mobile"
   },
   {
     "company": "Shiprocket",
@@ -1024,7 +976,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://shiprocket.com",
     "location": "Delhi, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b932L - \u20b952L + ESOPs",
+    "salaryRange": "₹32L - ₹52L + ESOPs",
     "stage": "Series E (Unicorn)",
     "description": "Scaling logistics companion app managing millions of daily e-commerce package dispatches, barcode scanning, and multi-courier tracking in Flutter.",
     "requiredSkills": [
@@ -1034,8 +986,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Barcode Scanner",
       "Background GPS"
     ],
-    "category": "Mobile",
-    "id": "flutter-47-shiprocket"
+    "category": "Mobile"
   },
   {
     "company": "Classplus",
@@ -1046,7 +997,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://classplus.co",
     "location": "Noida, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b935L - \u20b955L + ESOPs",
+    "salaryRange": "₹35L - ₹55L + ESOPs",
     "stage": "Series D ($160M raised)",
     "description": "Leading white-label educator app generator, encrypted DRM video player, and real-time live test engines in Flutter for 100k+ educators.",
     "requiredSkills": [
@@ -1056,8 +1007,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "White-label Automation",
       "Security"
     ],
-    "category": "Mobile",
-    "id": "flutter-48-classplus"
+    "category": "Mobile"
   },
   {
     "company": "Zetwerk",
@@ -1068,7 +1018,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://zetwerk.com",
     "location": "Bengaluru, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b930L - \u20b950L + ESOPs",
+    "salaryRange": "₹30L - ₹50L + ESOPs",
     "stage": "Series F (Unicorn)",
     "description": "Building custom manufacturing inspection app with offline project milestones, CAD blueprint viewer, and QC checklists in Flutter.",
     "requiredSkills": [
@@ -1078,8 +1028,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Document Viewing",
       "B2B SaaS"
     ],
-    "category": "Mobile",
-    "id": "flutter-49-zetwerk"
+    "category": "Mobile"
   },
   {
     "company": "Urban Company",
@@ -1090,7 +1039,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
     "website": "https://urbancompany.com",
     "location": "Gurgaon, India / Remote",
     "isRemote": true,
-    "salaryRange": "\u20b936L - \u20b958L + ESOPs",
+    "salaryRange": "₹36L - ₹58L + ESOPs",
     "stage": "Series F (Unicorn)",
     "description": "Scaling service professional partner mobile app with offline order acceptance, training modules, and real-time earnings payout in Flutter.",
     "requiredSkills": [
@@ -1100,8 +1049,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Offline Mode",
       "Android Optimization"
     ],
-    "category": "Mobile",
-    "id": "flutter-50-urban-company"
+    "category": "Mobile"
   },
   {
     "company": "Shorebird",
@@ -1122,8 +1070,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Compilers",
       "Mobile Architecture"
     ],
-    "category": "Mobile",
-    "id": "flutter-51-shorebird"
+    "category": "Mobile"
   },
   {
     "company": "Reflectly",
@@ -1144,8 +1091,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Haptics",
       "Local-first"
     ],
-    "category": "Mobile",
-    "id": "flutter-52-reflectly"
+    "category": "Mobile"
   },
   {
     "company": "Superlist",
@@ -1166,8 +1112,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Rich Text Editors",
       "Cross-Platform UI"
     ],
-    "category": "Mobile",
-    "id": "flutter-53-superlist"
+    "category": "Mobile"
   },
   {
     "company": "LineLeap",
@@ -1188,8 +1133,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "WebSockets",
       "Location"
     ],
-    "category": "Mobile",
-    "id": "flutter-54-lineleap"
+    "category": "Mobile"
   },
   {
     "company": "SpruceID",
@@ -1210,8 +1154,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Dart",
       "Secure Enclave"
     ],
-    "category": "Mobile",
-    "id": "flutter-55-spruceid"
+    "category": "Mobile"
   },
   {
     "company": "GR8_TECH",
@@ -1232,8 +1175,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "WebSockets",
       "Performance Optimization"
     ],
-    "category": "Mobile",
-    "id": "flutter-56-gr8_tech"
+    "category": "Mobile"
   },
   {
     "company": "Very Good Ventures",
@@ -1254,8 +1196,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "BLoC",
       "Testing Best Practices"
     ],
-    "category": "Mobile",
-    "id": "flutter-57-very-good-ventures"
+    "category": "Mobile"
   },
   {
     "company": "LeanCode",
@@ -1276,8 +1217,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "CI/CD",
       "Native Integration"
     ],
-    "category": "Mobile",
-    "id": "flutter-58-leancode"
+    "category": "Mobile"
   },
   {
     "company": "Somnio Software",
@@ -1298,8 +1238,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Clean Architecture",
       "UI Polish"
     ],
-    "category": "Mobile",
-    "id": "flutter-59-somnio-software"
+    "category": "Mobile"
   },
   {
     "company": "Codemagic",
@@ -1320,8 +1259,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Fastlane",
       "macOS Build Infrastructure"
     ],
-    "category": "DevOps & Infra",
-    "id": "flutter-60-codemagic"
+    "category": "DevOps & Infra"
   },
   {
     "company": "Invertase",
@@ -1342,8 +1280,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Melos",
       "Open Source"
     ],
-    "category": "Mobile",
-    "id": "flutter-61-invertase"
+    "category": "Mobile"
   },
   {
     "company": "Resend",
@@ -1364,8 +1301,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "REST APIs",
       "Clean Design"
     ],
-    "category": "Mobile",
-    "id": "flutter-62-resend"
+    "category": "Mobile"
   },
   {
     "company": "Supabase",
@@ -1386,8 +1322,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Realtime WebSockets",
       "SDK Architecture"
     ],
-    "category": "Mobile",
-    "id": "flutter-63-supabase"
+    "category": "Mobile"
   },
   {
     "company": "RevenueCat",
@@ -1408,8 +1343,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "SDK Maintenance",
       "MethodChannels"
     ],
-    "category": "Mobile",
-    "id": "flutter-64-revenuecat"
+    "category": "Mobile"
   },
   {
     "company": "Stream",
@@ -1430,8 +1364,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Offline SQLite",
       "UI Kit Development"
     ],
-    "category": "Mobile",
-    "id": "flutter-65-stream"
+    "category": "Mobile"
   },
   {
     "company": "Appwrite",
@@ -1452,8 +1385,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Client SDKs",
       "REST / WebSockets"
     ],
-    "category": "Mobile",
-    "id": "flutter-66-appwrite"
+    "category": "Mobile"
   },
   {
     "company": "Cal.com",
@@ -1474,8 +1406,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Open Source",
       "Minimal UI"
     ],
-    "category": "Mobile",
-    "id": "flutter-67-cal.com"
+    "category": "Mobile"
   },
   {
     "company": "Dub.co",
@@ -1496,8 +1427,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "API Integration",
       "Clean Polish"
     ],
-    "category": "Mobile",
-    "id": "flutter-68-dub.co"
+    "category": "Mobile"
   },
   {
     "company": "Trigger.dev",
@@ -1518,8 +1448,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Push Notifications",
       "Open Source"
     ],
-    "category": "Mobile",
-    "id": "flutter-69-trigger.dev"
+    "category": "Mobile"
   },
   {
     "company": "Railway",
@@ -1540,8 +1469,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "WebSockets",
       "Developer UI"
     ],
-    "category": "Mobile",
-    "id": "flutter-70-railway"
+    "category": "Mobile"
   },
   {
     "company": "PostHog",
@@ -1562,8 +1490,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Native MethodChannels",
       "Low Battery Footprint"
     ],
-    "category": "Mobile",
-    "id": "flutter-71-posthog"
+    "category": "Mobile"
   },
   {
     "company": "Raycast",
@@ -1584,8 +1511,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Local Storage",
       "Design Craft"
     ],
-    "category": "Mobile",
-    "id": "flutter-72-raycast"
+    "category": "Mobile"
   },
   {
     "company": "Linear",
@@ -1606,8 +1532,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Custom Gestures",
       "High Polish"
     ],
-    "category": "Mobile",
-    "id": "flutter-73-linear"
+    "category": "Mobile"
   },
   {
     "company": "Amity",
@@ -1628,8 +1553,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "WebSockets",
       "Social Architecture"
     ],
-    "category": "Mobile",
-    "id": "flutter-74-amity"
+    "category": "Mobile"
   },
   {
     "company": "Nubank",
@@ -1650,8 +1574,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Performance at Scale",
       "Mobile CI/CD"
     ],
-    "category": "Mobile",
-    "id": "flutter-75-nubank"
+    "category": "Mobile"
   },
   {
     "company": "Betterment",
@@ -1672,8 +1595,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "State Management",
       "Accessibility"
     ],
-    "category": "Mobile",
-    "id": "flutter-76-betterment"
+    "category": "Mobile"
   },
   {
     "company": "Trust Wallet",
@@ -1694,8 +1616,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Cryptography",
       "Mobile Security"
     ],
-    "category": "Mobile",
-    "id": "flutter-77-trust-wallet"
+    "category": "Mobile"
   },
   {
     "company": "Uniswap Labs",
@@ -1716,8 +1637,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Security",
       "High Polish"
     ],
-    "category": "Mobile",
-    "id": "flutter-78-uniswap-labs"
+    "category": "Mobile"
   },
   {
     "company": "Ledger",
@@ -1738,8 +1658,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Hardware Protocol",
       "Security"
     ],
-    "category": "Mobile",
-    "id": "flutter-79-ledger"
+    "category": "Mobile"
   },
   {
     "company": "Trezor / SatoshiLabs",
@@ -1760,8 +1679,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "NFC / USB",
       "Cryptography"
     ],
-    "category": "Mobile",
-    "id": "flutter-80-trezor---satoshilabs"
+    "category": "Mobile"
   },
   {
     "company": "Bitso",
@@ -1782,8 +1700,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Payment Rails",
       "MethodChannels"
     ],
-    "category": "Mobile",
-    "id": "flutter-81-bitso"
+    "category": "Mobile"
   },
   {
     "company": "Kraken",
@@ -1804,8 +1721,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "WebSockets",
       "Security"
     ],
-    "category": "Mobile",
-    "id": "flutter-82-kraken"
+    "category": "Mobile"
   },
   {
     "company": "Wise",
@@ -1826,8 +1742,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Accessibility",
       "Design System"
     ],
-    "category": "Mobile",
-    "id": "flutter-83-wise"
+    "category": "Mobile"
   },
   {
     "company": "Revolut",
@@ -1848,8 +1763,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Micro-apps",
       "Fintech"
     ],
-    "category": "Mobile",
-    "id": "flutter-84-revolut"
+    "category": "Mobile"
   },
   {
     "company": "Monzo",
@@ -1870,8 +1784,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Biometrics",
       "Fintech"
     ],
-    "category": "Mobile",
-    "id": "flutter-85-monzo"
+    "category": "Mobile"
   },
   {
     "company": "Trade Republic",
@@ -1892,8 +1805,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Security",
       "High Reliability"
     ],
-    "category": "Mobile",
-    "id": "flutter-86-trade-republic"
+    "category": "Mobile"
   },
   {
     "company": "Bitpanda",
@@ -1914,8 +1826,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "State Management",
       "MethodChannels"
     ],
-    "category": "Mobile",
-    "id": "flutter-87-bitpanda"
+    "category": "Mobile"
   },
   {
     "company": "TradeWindow",
@@ -1936,8 +1847,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Barcode Scanner",
       "PDF Generation"
     ],
-    "category": "Mobile",
-    "id": "flutter-88-tradewindow"
+    "category": "Mobile"
   },
   {
     "company": "Carousell",
@@ -1958,8 +1868,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Marketplace UI",
       "WebSockets"
     ],
-    "category": "Mobile",
-    "id": "flutter-89-carousell"
+    "category": "Mobile"
   },
   {
     "company": "Grab",
@@ -1980,8 +1889,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Offline Queue",
       "Reliability"
     ],
-    "category": "Mobile",
-    "id": "flutter-90-grab"
+    "category": "Mobile"
   },
   {
     "company": "Toss / Viva Republica",
@@ -2002,8 +1910,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "High Security",
       "Fintech"
     ],
-    "category": "Mobile",
-    "id": "flutter-91-toss---viva-republica"
+    "category": "Mobile"
   },
   {
     "company": "Gojek",
@@ -2024,8 +1931,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "MethodChannels",
       "Modular Code"
     ],
-    "category": "Mobile",
-    "id": "flutter-92-gojek"
+    "category": "Mobile"
   },
   {
     "company": "Miro",
@@ -2046,8 +1952,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Stylus / Touch Events",
       "Performance"
     ],
-    "category": "Mobile",
-    "id": "flutter-93-miro"
+    "category": "Mobile"
   },
   {
     "company": "Notion",
@@ -2068,8 +1973,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Local Cache",
       "Performance"
     ],
-    "category": "Mobile",
-    "id": "flutter-94-notion"
+    "category": "Mobile"
   },
   {
     "company": "Figma",
@@ -2090,8 +1994,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "WebSockets",
       "High Polish"
     ],
-    "category": "Mobile",
-    "id": "flutter-95-figma"
+    "category": "Mobile"
   },
   {
     "company": "Vercel",
@@ -2112,8 +2015,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Real-time Logs",
       "Design Systems"
     ],
-    "category": "Mobile",
-    "id": "flutter-96-vercel"
+    "category": "Mobile"
   },
   {
     "company": "PostHog Mobile",
@@ -2134,8 +2036,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Performance",
       "Low Latency"
     ],
-    "category": "Mobile",
-    "id": "flutter-97-posthog-mobile"
+    "category": "Mobile"
   },
   {
     "company": "Wolt",
@@ -2156,8 +2057,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Audio Focus",
       "Reliability"
     ],
-    "category": "Mobile",
-    "id": "flutter-98-wolt"
+    "category": "Mobile"
   },
   {
     "company": "Hamilton Musical",
@@ -2178,8 +2078,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Audio Sync",
       "Stripe"
     ],
-    "category": "Mobile",
-    "id": "flutter-99-hamilton-musical"
+    "category": "Mobile"
   },
   {
     "company": "BMW Group",
@@ -2200,8 +2099,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Vehicle Telemetry",
       "Scalability"
     ],
-    "category": "Mobile",
-    "id": "flutter-100-bmw-group"
+    "category": "Mobile"
   },
   {
     "company": "Philips Hue / Signify",
@@ -2222,8 +2120,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "IoT Network Discovery",
       "Color Gamut UI"
     ],
-    "category": "Mobile",
-    "id": "flutter-101-philips-hue---signify"
+    "category": "Mobile"
   },
   {
     "company": "Kashat",
@@ -2244,8 +2141,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Offline Encryption",
       "Android"
     ],
-    "category": "Mobile",
-    "id": "flutter-102-kashat"
+    "category": "Mobile"
   },
   {
     "company": "Chipper Cash",
@@ -2266,8 +2162,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Payment Security",
       "MethodChannels"
     ],
-    "category": "Mobile",
-    "id": "flutter-103-chipper-cash"
+    "category": "Mobile"
   },
   {
     "company": "Kuda Bank",
@@ -2288,8 +2183,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Card Tokenization",
       "BLoC"
     ],
-    "category": "Mobile",
-    "id": "flutter-104-kuda-bank"
+    "category": "Mobile"
   },
   {
     "company": "Karat",
@@ -2310,8 +2204,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Stripe Issuing",
       "Fintech"
     ],
-    "category": "Mobile",
-    "id": "flutter-105-karat"
+    "category": "Mobile"
   },
   {
     "company": "Braintrust",
@@ -2332,8 +2225,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Job Feeds",
       "Push Alerts"
     ],
-    "category": "Mobile",
-    "id": "flutter-106-braintrust"
+    "category": "Mobile"
   },
   {
     "company": "Aura Health",
@@ -2354,8 +2246,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Personalized Machine Learning",
       "Smooth UI"
     ],
-    "category": "Mobile",
-    "id": "flutter-107-aura-health"
+    "category": "Mobile"
   },
   {
     "company": "Giveth",
@@ -2376,8 +2267,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Open Source",
       "Mobile"
     ],
-    "category": "Mobile",
-    "id": "flutter-108-giveth"
+    "category": "Mobile"
   },
   {
     "company": "Gitcoin",
@@ -2398,8 +2288,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Open Source",
       "Mobile"
     ],
-    "category": "Mobile",
-    "id": "flutter-109-gitcoin"
+    "category": "Mobile"
   },
   {
     "company": "Status.im",
@@ -2420,8 +2309,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "P2P Networking",
       "Mobile Security"
     ],
-    "category": "Mobile",
-    "id": "flutter-110-status.im"
+    "category": "Mobile"
   },
   {
     "company": "Lens Protocol",
@@ -2442,8 +2330,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Social Feeds",
       "Web3"
     ],
-    "category": "Mobile",
-    "id": "flutter-111-lens-protocol"
+    "category": "Mobile"
   },
   {
     "company": "Farcaster Mobile (Warpcast)",
@@ -2464,8 +2351,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Performance Optimization",
       "Protocol Sync"
     ],
-    "category": "Mobile",
-    "id": "flutter-112-farcaster-mobile-(warpcast)"
+    "category": "Mobile"
   },
   {
     "company": "Pond",
@@ -2486,8 +2372,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "WebSockets",
       "Clean Architecture"
     ],
-    "category": "Mobile",
-    "id": "flutter-113-pond"
+    "category": "Mobile"
   },
   {
     "company": "Nansen",
@@ -2508,8 +2393,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Real-time Alerts",
       "Mobile Cache"
     ],
-    "category": "Mobile",
-    "id": "flutter-114-nansen"
+    "category": "Mobile"
   },
   {
     "company": "Arkham Intelligence",
@@ -2530,8 +2414,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Push Notifications",
       "Security"
     ],
-    "category": "Mobile",
-    "id": "flutter-115-arkham-intelligence"
+    "category": "Mobile"
   },
   {
     "company": "Zapper",
@@ -2552,8 +2435,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Reactive State",
       "Mobile UI"
     ],
-    "category": "Mobile",
-    "id": "flutter-116-zapper"
+    "category": "Mobile"
   },
   {
     "company": "Rainbow Wallet",
@@ -2574,8 +2456,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "MethodChannels",
       "Security"
     ],
-    "category": "Mobile",
-    "id": "flutter-117-rainbow-wallet"
+    "category": "Mobile"
   },
   {
     "company": "Phantom",
@@ -2596,8 +2477,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Security Sandboxing",
       "High Traffic"
     ],
-    "category": "Mobile",
-    "id": "flutter-118-phantom"
+    "category": "Mobile"
   },
   {
     "company": "Brave Software",
@@ -2618,8 +2498,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Local Encryption",
       "Zero Telemetry"
     ],
-    "category": "Mobile",
-    "id": "flutter-119-brave-software"
+    "category": "Mobile"
   },
   {
     "company": "DuckDuckGo",
@@ -2640,8 +2519,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Network Packet Inspection",
       "Privacy"
     ],
-    "category": "Mobile",
-    "id": "flutter-120-duckduckgo"
+    "category": "Mobile"
   },
   {
     "company": "Tailscale",
@@ -2662,8 +2540,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Dart",
       "Native Network Extensions"
     ],
-    "category": "DevOps & Infra",
-    "id": "flutter-121-tailscale"
+    "category": "DevOps & Infra"
   },
   {
     "company": "1Password",
@@ -2684,8 +2561,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Dart",
       "Passkeys"
     ],
-    "category": "Mobile",
-    "id": "flutter-122-1password"
+    "category": "Mobile"
   },
   {
     "company": "Bitwarden",
@@ -2706,8 +2582,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Autofill Services",
       "Security"
     ],
-    "category": "Mobile",
-    "id": "flutter-123-bitwarden"
+    "category": "Mobile"
   },
   {
     "company": "Proton",
@@ -2728,8 +2603,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Secure Storage",
       "Zero Knowledge"
     ],
-    "category": "Mobile",
-    "id": "flutter-124-proton"
+    "category": "Mobile"
   },
   {
     "company": "Mullvad VPN",
@@ -2750,8 +2624,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Rust FFI",
       "Open Source"
     ],
-    "category": "Mobile",
-    "id": "flutter-125-mullvad-vpn"
+    "category": "Mobile"
   },
   {
     "company": "Kagi",
@@ -2772,8 +2645,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Minimal UX",
       "Fast Boot"
     ],
-    "category": "Mobile",
-    "id": "flutter-126-kagi"
+    "category": "Mobile"
   },
   {
     "company": "Bear App (Shiny Frog)",
@@ -2794,8 +2666,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Typography",
       "Local Database"
     ],
-    "category": "Mobile",
-    "id": "flutter-127-bear-app-(shiny-frog)"
+    "category": "Mobile"
   },
   {
     "company": "Cron / Notion Calendar",
@@ -2816,8 +2687,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Gesture Navigation",
       "Design Polish"
     ],
-    "category": "Mobile",
-    "id": "flutter-128-cron---notion-calendar"
+    "category": "Mobile"
   },
   {
     "company": "Linear Mobile Team",
@@ -2838,8 +2708,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "CRDTs",
       "Micro-interactions"
     ],
-    "category": "Mobile",
-    "id": "flutter-129-linear-mobile-team"
+    "category": "Mobile"
   },
   {
     "company": "Slite",
@@ -2860,8 +2729,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Offline Reading",
       "Clean UI"
     ],
-    "category": "Mobile",
-    "id": "flutter-130-slite"
+    "category": "Mobile"
   },
   {
     "company": "Tango",
@@ -2882,8 +2750,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Video Playback",
       "SaaS"
     ],
-    "category": "Mobile",
-    "id": "flutter-131-tango"
+    "category": "Mobile"
   },
   {
     "company": "Descript Mobile",
@@ -2904,8 +2771,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Cloud Sync",
       "Video Scrubbing"
     ],
-    "category": "Mobile",
-    "id": "flutter-132-descript-mobile"
+    "category": "Mobile"
   },
   {
     "company": "Loom Mobile",
@@ -2926,8 +2792,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Video Streaming",
       "MethodChannels"
     ],
-    "category": "Mobile",
-    "id": "flutter-133-loom-mobile"
+    "category": "Mobile"
   },
   {
     "company": "Otter.ai",
@@ -2948,13 +2813,12 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Voice Recording",
       "Rich Text"
     ],
-    "category": "Mobile",
-    "id": "flutter-134-otter.ai"
+    "category": "Mobile"
   },
   {
     "company": "Runway Mobile",
     "roleTitle": "Founding Mobile Engineer (GenAI Video in Flutter)",
-    "founderName": "Crist\u00f3bal Valenzuela",
+    "founderName": "Cristóbal Valenzuela",
     "founderRole": "Co-founder & CEO",
     "email": "cris@runwayml.com",
     "website": "https://runwayml.com",
@@ -2970,8 +2834,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "GenAI Streaming",
       "Design Craft"
     ],
-    "category": "Mobile",
-    "id": "flutter-135-runway-mobile"
+    "category": "Mobile"
   },
   {
     "company": "Pika",
@@ -2992,8 +2855,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "Cloud Rendering",
       "Mobile UI"
     ],
-    "category": "Mobile",
-    "id": "flutter-136-pika"
+    "category": "Mobile"
   },
   {
     "company": "HeyGen",
@@ -3014,8 +2876,7 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "WebSockets",
       "Performance"
     ],
-    "category": "Mobile",
-    "id": "flutter-137-heygen"
+    "category": "Mobile"
   },
   {
     "company": "ElevenLabs",
@@ -3036,9 +2897,6 @@ export const FLUTTER_FOUNDING_ROLES: StartupRole[] = [
       "AudioBuffer",
       "Offline Cache"
     ],
-    "category": "Mobile",
-    "id": "flutter-138-elevenlabs"
+    "category": "Mobile"
   }
-];
-
-export const DEFAULT_STARTUP_ROLES: StartupRole[] = FLUTTER_FOUNDING_ROLES;
+]

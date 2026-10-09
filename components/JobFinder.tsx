@@ -81,13 +81,23 @@ export function JobFinder({
         </div>
 
         <div className="flex items-center gap-2">
+          <a
+            href="/flutter_founding_jobs_100.csv"
+            download="flutter_founding_jobs_100.csv"
+            className="rounded border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 hover:bg-zinc-50 transition-colors flex items-center gap-1.5 shadow-2xs"
+            title="Download all 138 Flutter leads as CSV"
+          >
+            <FileSpreadsheet className="h-3.5 w-3.5 text-emerald-600" />
+            <span>Download CSV (138 Leads)</span>
+          </a>
+
           <button
             type="button"
             onClick={onOpenImportSheet}
             className="rounded border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 hover:bg-zinc-50 transition-colors flex items-center gap-1.5 shadow-2xs"
           >
             <FileSpreadsheet className="h-3.5 w-3.5 text-zinc-600" />
-            <span>Import Sheet / CSV</span>
+            <span>Import Sheet</span>
           </button>
 
           <button
