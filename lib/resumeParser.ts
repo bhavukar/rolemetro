@@ -53,7 +53,50 @@ export const DEMO_PROFILE: CandidateProfile = {
       metrics: 'Zero-lag peer synchronization with 60FPS canvas rendering',
       techStack: ['Next.js', 'TypeScript', 'WebSockets', 'Tailwind CSS']
     }
-  ]
+  ],
+  education: [
+    {
+      degree: 'B.S. Computer Science',
+      institution: 'UC Berkeley',
+      year: '2020'
+    }
+  ],
+  parsedBy: 'demo',
+  rawAiJson: JSON.stringify({
+    name: 'Alex Rivera',
+    email: 'alex.rivera.dev@gmail.com',
+    phone: '+1 (415) 890-2341',
+    location: 'San Francisco, CA / Remote',
+    title: 'Full-Stack & Systems Engineer',
+    seniority: 'Senior',
+    skills: ['TypeScript', 'Next.js', 'React', 'Rust', 'PostgreSQL', 'Docker', 'Distributed Systems', 'Tailwind CSS', 'Redis'],
+    experienceYears: 4,
+    summary: 'Full-stack builder specializing in low-latency web applications, distributed data systems, and developer infrastructure.',
+    githubUrl: 'https://github.com/alexrivera-dev',
+    portfolioUrl: 'https://alexrivera.io',
+    linkedinUrl: 'https://linkedin.com/in/alex-rivera-dev',
+    keyProjects: [
+      {
+        name: 'Turbocache',
+        description: 'Distributed in-memory query cache layer for PostgreSQL with sub-millisecond invalidation.',
+        metrics: 'Cut p99 database response latency by 68% under 10k req/sec load',
+        techStack: ['Rust', 'PostgreSQL', 'Redis', 'Docker']
+      },
+      {
+        name: 'DevSync',
+        description: 'Local-first collaborative canvas editor with real-time CRDT conflict resolution.',
+        metrics: 'Zero-lag peer synchronization with 60FPS canvas rendering',
+        techStack: ['Next.js', 'TypeScript', 'WebSockets', 'Tailwind CSS']
+      }
+    ],
+    education: [
+      {
+        degree: 'B.S. Computer Science',
+        institution: 'UC Berkeley',
+        year: '2020'
+      }
+    ]
+  }, null, 2)
 };
 
 export function parseResumeContent(rawText: string): CandidateProfile {

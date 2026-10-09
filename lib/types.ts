@@ -5,6 +5,12 @@ export interface KeyProject {
   techStack: string[];
 }
 
+export interface EducationItem {
+  degree: string;
+  institution: string;
+  year?: string;
+}
+
 export interface CandidateProfile {
   name: string;
   email: string;
@@ -19,6 +25,9 @@ export interface CandidateProfile {
   portfolioUrl?: string;
   linkedinUrl?: string;
   keyProjects: KeyProject[];
+  education?: EducationItem[];
+  rawAiJson?: string;
+  parsedBy?: 'free-ai' | 'heuristic' | 'demo';
 }
 
 export type RoleCategory = 
